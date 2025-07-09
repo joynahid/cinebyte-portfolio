@@ -23,7 +23,7 @@ interface TabCategory {
 
 export default function ReelScroller() {
     const [isMuted, setIsMuted] = useState(true)
-    const [activeTab, setActiveTab] = useState('showcase')
+    const [activeTab, setActiveTab] = useState('shorts')
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.1,
@@ -37,12 +37,12 @@ export default function ReelScroller() {
             icon: <Star className="w-4 h-4" />,
             description: 'Our best work highlights'
         },
-        {
-            id: 'youtube',
-            label: 'Youtube',
-            icon: <Briefcase className="w-4 h-4" />,
-            description: 'Success stories & testimonials'
-        }
+        // {
+        //     id: 'youtube',
+        //     label: 'Youtube',
+        //     icon: <Briefcase className="w-4 h-4" />,
+        //     description: 'Success stories & testimonials'
+        // }
     ]
 
     // Sample reel videos with categories - replace with your YouTube video IDs
