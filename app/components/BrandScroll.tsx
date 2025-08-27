@@ -26,41 +26,26 @@ export default function BrandScroll() {
           Trusted by Leading <span className="text-brand-gradient">Brands</span>
         </motion.h2>
 
-        <div className="relative">
+        <div className="relative overflow-hidden">
           <div className="flex animate-scroll">
-            {/* First set of brands */}
-            {brands.map((brand, index) => (
+            {brands.concat(brands).map((brand, index) => (
               <div
-                key={`first-${index}`}
+                key={index}
                 className="flex-shrink-0 mx-4 md:mx-6"
               >
-                <Image
-                  src={brand.src}
-                  alt={brand.name}
-                  width={100}
-                  height={100}
-                  className="object-contain max-w-[100px] max-h-[100px] opacity-80 hover:opacity-100 transition-opacity duration-300"
-                />
-              </div>
-            ))}
-
-            {/* Duplicate set for seamless loop */}
-            {brands.map((brand, index) => (
-              <div
-                key={`second-${index}`}
-                className="flex-shrink-0 mx-4 md:mx-6"
-              >
-                <Image
-                  src={brand.src}
-                  alt={brand.name}
-                  width={100}
-                  height={100}
-                  className="object-contain max-w-[100px] max-h-[100px] opacity-80 hover:opacity-100 transition-opacity duration-300"
-                />
+                <div className="relative group">
+                  <Image
+                    src={brand.src}
+                    alt={brand.name}
+                    width={100}
+                    height={100}
+                    className="object-contain max-w-[90px] max-h-[90px] opacity-100 transition-all duration-150 rounded-lg filter contrast-110 brightness-95 drop-shadow-sm hover:drop-shadow-md"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 to-brand-secondary/8 rounded-lg group-hover:from-brand-primary/4 group-hover:to-brand-secondary/4 transition-all duration-150" />
+                </div>
               </div>
             ))}
           </div>
-
         </div>
       </div>
     </section>

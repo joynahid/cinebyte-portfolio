@@ -1,0 +1,352 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services", 
+    "gallery": "Gallery",
+    "process": "Process",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "We Make Reels That Actually",
+    "titleHighlight": "Perform",
+    "subtitle": "Send us your footage. Get back scroll-stopping reels that actually get engagement.",
+    "getStarted": "Get Started",
+    "viewWork": "View Work"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Professional video content and social media solutions to grow your business",
+    "cta": "Grow Your Business",
+    "businessGrowth": {
+      "title": "Business Growth Video Content",
+      "description": "Strategic video content designed to drive business growth and conversions",
+      "features": {
+        "brandStorytelling": "Brand Storytelling",
+        "leadGeneration": "Lead Generation",
+        "productShowcases": "Product Showcases",
+        "customerTestimonials": "Customer Testimonials"
+      }
+    },
+    "podcastEditing": {
+      "title": "Podcast Editing & Clips",
+      "description": "Professional podcast editing and engaging short clips for social distribution",
+      "features": {
+        "fullEpisodeEditing": "Full Episode Editing",
+        "highlightClips": "Highlight Clips",
+        "audioEnhancement": "Audio Enhancement",
+        "socialMediaCuts": "Social Media Cuts"
+      }
+    },
+    "socialMediaManagement": {
+      "title": "Social Media Management",
+      "description": "Comprehensive social media management to build your online presence",
+      "features": {
+        "contentPlanning": "Content Planning",
+        "multiPlatformPublishing": "Multi-Platform Publishing",
+        "engagementTracking": "Engagement Tracking",
+        "brandVoiceConsistency": "Brand Voice Consistency"
+      }
+    },
+    "trendResearch": {
+      "title": "Trend Research & Content Strategy",
+      "description": "Data-driven content strategies based on market research and insights",
+      "features": {
+        "marketResearch": "Market Research",
+        "contentRecommendations": "Content Recommendations",
+        "competitorAnalysis": "Competitor Analysis",
+        "performanceInsights": "Performance Insights"
+      }
+    }
+  },
+  "videoGallery": {
+    "title": "Video Gallery",
+    "subtitle": "Explore our comprehensive collection of video content, organized by series and themes",
+    "reelSeries": {
+      "title": "REEL Series",
+      "description": "Our signature reel collection showcasing dynamic content"
+    },
+    "primePursuit": {
+      "title": "Prime Pursuit Series",
+      "description": "Premium content series highlighting our pursuit of excellence"
+    },
+    "featuredContent": {
+      "title": "Featured Content",
+      "description": "Specially curated content showcasing our diverse creative capabilities"
+    },
+    "extendedVersions": {
+      "title": "Extended Versions",
+      "description": "Longer format content and alternative versions"
+    }
+  },
+  "workflow": {
+    "title": "Reel Production Process",
+    "subtitle": "Our streamlined 4-step process gets your content from concept to viral-ready in record time.",
+    "step1": {
+      "title": "Brief & Strategy",
+      "description": "We analyze your content goals and identify the perfect viral formula for your brand.",
+      "details": {
+        "contentStrategy": "Content strategy discussion",
+        "audienceAnalysis": "Target audience analysis",
+        "platformPlanning": "Platform-specific planning",
+        "trendResearch": "Trend research & hooks"
+      }
+    },
+    "step2": {
+      "title": "Reel Creation",
+      "description": "Fast-paced editing with trending effects, perfect timing, and viral optimization.",
+      "details": {
+        "dynamicEditing": "Dynamic reel editing",
+        "trendingEffects": "Trending effects & transitions",
+        "musicSync": "Music sync & beat matching",
+        "hookCreation": "Hook creation & pacing"
+      }
+    },
+    "step3": {
+      "title": "Review & Polish",
+      "description": "Quick collaborative feedback rounds to perfect your reel before going live.",
+      "details": {
+        "instantDelivery": "Instant draft delivery",
+        "realtimeFeedback": "Real-time feedback",
+        "fastRevisions": "Fast revision cycles",
+        "finalOptimization": "Final optimization"
+      }
+    },
+    "step4": {
+      "title": "Launch Ready",
+      "description": "Platform-optimized delivery with captions, hashtags, and posting strategy.",
+      "details": {
+        "multiPlatformExports": "Multi-platform exports",
+        "optimizedThumbnails": "Optimized thumbnails",
+        "captionsHashtags": "Caption & hashtag suggestions",
+        "postingRecommendations": "Posting time recommendations"
+      }
+    },
+    "cta": {
+      "title": "Ready to go viral?",
+      "subtitle": "Let's create reels that capture attention, drive engagement, and grow your audience.",
+      "button": "Create Your First Reel"
+    }
+  },
+  "testimonials": {
+    "badge": "Client Testimonials",
+    "title": "What Our Clients Say",
+    "subtitle": "Here's what creators have to say about working with us.",
+    "trustpilot": "Read our reviews on Trustpilot",
+    "bottomCta": {
+      "question": "Want to work with us?",
+      "button": "Start Your Project"
+    }
+  },
+  "pricing": {
+    "title": "Content Pricing Plans",
+    "subtitle": "From individual content creation to enterprise-level strategies. Transparent pricing for every business's growth.",
+    "plans": {
+      "contentCreator": {
+        "name": "Content Creator",
+        "price": "$297",
+        "period": "per month",
+        "description": "Perfect for individual creators and small businesses starting their video journey",
+        "cta": "Start Creating",
+        "features": [
+          "4 professional video edits",
+          "Social media content (Reels, TikTok, YouTube Shorts)",
+          "Basic podcast editing (2 episodes)",
+          "Content planning & strategy",
+          "3 rounds of revisions",
+          "Multi-platform formats",
+          "48-hour delivery",
+          "Email support"
+        ]
+      },
+      "businessGrowth": {
+        "name": "Business Growth",
+        "price": "$697",
+        "period": "per month",
+        "description": "Comprehensive video marketing solution designed to drive business growth",
+        "cta": "Grow Your Business",
+        "popular": "Most Popular",
+        "features": [
+          "10 professional video edits",
+          "Brand storytelling videos",
+          "Product showcase content",
+          "Full podcast editing (4 episodes)",
+          "Social media management",
+          "Trend research & content strategy",
+          "Customer testimonial videos",
+          "Unlimited revisions",
+          "24-hour priority delivery",
+          "Dedicated account manager",
+          "Performance analytics"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "tailored pricing",
+        "description": "Complete content solution for brands and agencies scaling at enterprise level",
+        "cta": "Let's Talk",
+        "features": [
+          "Unlimited video content",
+          "Full-service content production",
+          "Advanced podcast production",
+          "Complete social media management",
+          "Custom brand animations",
+          "White-label solutions",
+          "Same-day rush delivery",
+          "Dedicated creative team",
+          "Monthly strategy sessions",
+          "Advanced analytics & reporting",
+          "Custom integrations",
+          "Priority support & SLA"
+        ]
+      }
+    },
+    "guarantees": {
+      "satisfaction": {
+        "title": "100% Satisfaction Guarantee",
+        "description": "We'll work with you until you love it, or money back"
+      },
+      "allInOne": {
+        "title": "All-in-One Solution",
+        "description": "Video production, editing, and social media management"
+      },
+      "scalable": {
+        "title": "Scalable Packages",
+        "description": "From content creators to enterprise-level solutions"
+      },
+      "expertTeam": {
+        "title": "Expert Creative Team",
+        "description": "Dedicated professionals with proven track records"
+      }
+    },
+    "contactCta": {
+      "subtitle": "Ready to grow your business with professional video content? Need a custom solution?",
+      "button": "Contact our team →"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Let's Start Something Epic",
+      "title": "Ready to Go Viral?",
+      "subtitle": "Transform your ideas into scroll-stopping content that captivates millions. Choose how you'd like to connect with us.",
+      "stats": {
+        "videos": "500+ Videos",
+        "videosDesc": "Created",
+        "views": "50M+ Views",
+        "viewsDesc": "Generated",
+        "support": "24/7",
+        "supportDesc": "Support"
+      }
+    },
+    "tabs": {
+      "consultation": "Book Consultation",
+      "message": "Send Message"
+    },
+    "consultation": {
+      "title": "Schedule Your Discovery Call",
+      "subtitle": "30-minute consultation to discuss your project and get a custom quote",
+      "coverage": "What we'll cover:",
+      "coverageItems": [
+        "Project goals & requirements",
+        "Brand & target audience review",
+        "Custom quote & timeline",
+        "Relevant portfolio examples"
+      ]
+    },
+    "messageForm": {
+      "title": "Send Us a Message",
+      "subtitle": "Tell us about your project and we'll get back to you within 24 hours",
+      "successMessage": "Message sent successfully! We'll get back to you soon.",
+      "errorMessage": "Something went wrong. Please try again.",
+      "form": {
+        "name": "Name",
+        "namePlaceholder": "Your full name",
+        "email": "Email",
+        "emailPlaceholder": "your.email@example.com",
+        "projectType": "Project Type",
+        "projectTypePlaceholder": "Select project type",
+        "budgetRange": "Budget Range",
+        "budgetRangePlaceholder": "Select budget range",
+        "sampleLink": "Sample Link (Optional)",
+        "sampleLinkPlaceholder": "https://example.com/your-sample",
+        "uploadFiles": "Upload Files (Optional)",
+        "uploadPlaceholder": "Click to upload or drag and drop",
+        "uploadDescription": "Video, Image, or PDF files",
+        "message": "Message",
+        "messagePlaceholder": "Tell us about your project, goals, and any specific requirements...",
+        "sending": "Sending...",
+        "sendButton": "Send Message"
+      },
+      "projectTypes": [
+        "Instagram Reels",
+        "TikTok Videos",
+        "YouTube Shorts",
+        "Social Media Content",
+        "Reel Package Deal",
+        "Brand Content Series",
+        "User-Generated Content",
+        "Other"
+      ],
+      "budgetRanges": [
+        "Under $500 (1-5 reels)",
+        "$500 - $2,000 (5-15 reels)",
+        "$2,000 - $5,000 (Monthly package)",
+        "$5,000+ (Enterprise/Agency)",
+        "Not sure yet"
+      ]
+    },
+    "contactInfo": {
+      "title": "Other Ways to Connect",
+      "email": {
+        "title": "Email Us",
+        "description": "Drop us a line anytime",
+        "contact": "hello@cinebyte.com"
+      },
+      "phone": {
+        "title": "Call Us",
+        "description": "Available 9 AM - 6 PM EST",
+        "contact": "+1 (555) 123-4567"
+      },
+      "location": {
+        "title": "Visit Us",
+        "description": "Come say hello",
+        "contact": "Los Angeles, CA"
+      },
+      "social": {
+        "title": "Follow Our Work"
+      }
+    }
+  },
+  "brands": {
+    "title": "Trusted by Leading Brands"
+  },
+  "footer": {
+    "brand": {
+      "name": "CineByte",
+      "description": "Crafting viral reels and short-form content that captivates audiences worldwide."
+    },
+    "quickLinks": {
+      "contact": "Contact",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    },
+    "copyright": "© 2025 CineByte. All rights reserved.",
+    "madeWith": "Handcrafted with",
+    "location": "in the heart of Bangladesh"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "close": "Close",
+    "open": "Open",
+    "language": "Language",
+    "required": "*",
+    "optional": "(Optional)"
+  },
+  "meta": {
+    "title": "CineByte - Professional Reel & Short-Form Video Editing Agency",
+    "description": "Professional reel editing agency specializing in viral Instagram Reels, TikTok videos, and YouTube Shorts. We transform your content into scroll-stopping, engagement-driving short-form videos that captivate audiences worldwide.",
+    "keywords": "reel editing, instagram reels, tiktok editing, youtube shorts, short-form videos, viral content, social media editing, reel agency, content creation, mobile video, cinebyte, professional video editing"
+  }
+}

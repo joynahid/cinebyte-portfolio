@@ -2,8 +2,8 @@
 
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { Star, Quote } from 'lucide-react'
-import { useState } from 'react'
+import { Star } from 'lucide-react'
+import Image from 'next/image'
 
 interface Testimonial {
   id: number
@@ -19,22 +19,30 @@ const testimonials: Testimonial[] = [
   {
     id: 1,
     name: "Nusrat Meraji",
-    role: "Digital Content Creator",
+    role: "Content Creator",
     company: "Nusrattalks",
-    content: "I am enormously thankful and eternally grateful for the CineByte team and all the hard work they put into making my podcast episodes happen. This was my first experience working with professionals on this, and they made it so beautiful. This would not have been possible without them - they truly delivered beyond expectations.",
+    content: "Working with CineByte has been great. They really know how to edit videos that grab attention. My content feels much more polished now.",
     rating: 5,
-    avatar: "NM"
+    avatar: "/assets/clients/nusrat.png"
   },
   {
-    id: 2,
+    id: 3,
     name: "Neyon",
-    role: "Digital Content Creator",
+    role: "Instagram Influencer",
     company: "Neyon",
-    content: "Wouldn't have been possible without the team. They made the process so smooth and easy.",
+    content: "They're quick with edits and always deliver on time. The team knows what works on social media and my videos look way better now.",
     rating: 5,
-    avatar: "NY"
+    avatar: "/assets/clients/neyon.png"
   },
-  
+  {
+    id: 6,
+    name: "Sameer",
+    role: "Social Media Strategist",
+    company: "Sameer Digital",
+    content: "Solid work and reliable team. They understand the brief well and the final videos always match what I had in mind.",
+    rating: 5,
+    avatar: "/assets/clients/sameer.png"
+  }
 ]
 
 export default function Testimonials() {
@@ -43,182 +51,105 @@ export default function Testimonials() {
     threshold: 0.1,
   })
 
-  const [hoveredCard, setHoveredCard] = useState<number | null>(null)
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2
-      }
-    }
-  }
-
-  const cardVariants = {
-    hidden: { 
-      opacity: 0, 
-      y: 50,
-      scale: 0.9
-    },
-    visible: { 
-      opacity: 1, 
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut"
-      }
-    }
-  }
-
   return (
-    <section ref={testimonialRef} className="py-20 px-4 relative overflow-hidden">
+    <section ref={testimonialRef} className="section-padding container-padding relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImRvdHMiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMiIgZmlsbD0iIzNiODJmNiIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNkb3RzKSIvPjwvc3ZnPg==')] opacity-20"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={testimonialInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center content-spacing"
         >
           <motion.div
             initial={{ scale: 0 }}
             animate={testimonialInView ? { scale: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-2 bg-surface-overlay-light rounded-full px-6 py-3 mb-6 border border-surface-overlay-border"
+            className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-6 py-3 mb-6 border border-primary/20"
           >
-            <Star className="w-5 h-5 text-accent-blue fill-accent-blue" />
-            <span className="text-text-secondary font-medium">Client Testimonials</span>
+            <Star className="w-5 h-5 text-primary fill-primary" />
+            <span className="text-muted-foreground font-medium">Client Testimonials</span>
           </motion.div>
 
-          <h2 className="text-4xl md:text-6xl font-bold text-text-primary mb-6 font-space">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground content-spacing-sm font-[family-name:var(--font-space-grotesk)]">
             What Our <span className="text-brand-gradient">Clients Say</span>
           </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-            Don't just take our word for it. Hear from the amazing clients who've experienced the CineByte difference.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-[family-name:var(--font-inter)]">
+            Here's what creators have to say about working with us.
           </p>
         </motion.div>
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate={testimonialInView ? "visible" : "hidden"}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
-          {testimonials.map((testimonial, index) => (
-            <motion.div
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-gap content-spacing">
+          {testimonials.map((testimonial) => (
+            <div
               key={testimonial.id}
-              variants={cardVariants}
-              whileHover={{ 
-                y: -10,
-                scale: 1.02,
-                transition: { duration: 0.3, ease: "easeOut" }
-              }}
-              onHoverStart={() => setHoveredCard(testimonial.id)}
-              onHoverEnd={() => setHoveredCard(null)}
-              className="relative group"
+              className="bg-card border border-border rounded-lg card-padding h-full flex flex-col"
             >
-              <div className="glass-light rounded-2xl p-8 border border-glass-light hover:glass-medium transition-all duration-500 h-full flex flex-col relative overflow-hidden">
-                {/* Hover Gradient Overlay */}
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ 
-                    opacity: hoveredCard === testimonial.id ? 0.1 : 0 
-                  }}
-                  transition={{ duration: 0.3 }}
-                  className="absolute inset-0 bg-gradient-to-br from-primary-600 to-secondary-600 rounded-2xl"
-                />
-
-                {/* Quote Icon */}
-                <motion.div
-                  initial={{ rotate: 0, scale: 1 }}
-                  animate={{ 
-                    rotate: hoveredCard === testimonial.id ? 10 : 0,
-                    scale: hoveredCard === testimonial.id ? 1.1 : 1
-                  }}
-                  transition={{ duration: 0.3 }}
-                  className="w-12 h-12 bg-accent-blue/20 rounded-full flex items-center justify-center mb-6 relative z-10"
-                >
-                  <Quote className="w-6 h-6 text-accent-blue" />
-                </motion.div>
-
-                {/* Rating Stars */}
-                <div className="flex gap-1 mb-4 relative z-10">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <motion.div
-                      key={i}
-                      initial={{ scale: 0, rotate: -180 }}
-                      animate={testimonialInView ? { scale: 1, rotate: 0 } : {}}
-                      transition={{ 
-                        duration: 0.4, 
-                        delay: index * 0.1 + i * 0.05,
-                        type: "spring",
-                        stiffness: 200
-                      }}
-                    >
-                      <Star className="w-5 h-5 text-accent-blue fill-accent-blue" />
-                    </motion.div>
-                  ))}
-                </div>
-
-                {/* Testimonial Content */}
-                <motion.p
-                  animate={{
-                    color: hoveredCard === testimonial.id ? '#ffffff' : '#cbd5e1'
-                  }}
-                  transition={{ duration: 0.3 }}
-                  className="text-text-secondary mb-6 leading-relaxed flex-grow relative z-10"
-                >
-                  "{testimonial.content}"
-                </motion.p>
-
-                {/* Author Info */}
-                <div className="flex items-center gap-4 relative z-10">
-                  <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    className="w-12 h-12 bg-brand-gradient rounded-full flex items-center justify-center font-bold text-text-primary"
-                  >
-                    {testimonial.avatar}
-                  </motion.div>
-                  <div>
-                    <motion.h4
-                      animate={{
-                        color: hoveredCard === testimonial.id ? '#ffffff' : '#ffffff'
-                      }}
-                      className="font-semibold text-text-primary"
-                    >
-                      {testimonial.name}
-                    </motion.h4>
-                    <motion.p
-                      animate={{
-                        color: hoveredCard === testimonial.id ? '#cbd5e1' : '#94a3b8'
-                      }}
-                      transition={{ duration: 0.3 }}
-                      className="text-sm text-text-tertiary"
-                    >
-                      {testimonial.role} at {testimonial.company}
-                    </motion.p>
-                  </div>
-                </div>
-
-                {/* Animated Border */}
-                <motion.div
-                  initial={{ scale: 0, opacity: 0 }}
-                  animate={{
-                    scale: hoveredCard === testimonial.id ? 1 : 0,
-                    opacity: hoveredCard === testimonial.id ? 1 : 0
-                  }}
-                  transition={{ duration: 0.3 }}
-                  className="absolute inset-0 border-2 border-accent-blue rounded-2xl"
-                />
+              {/* Rating Stars */}
+              <div className="flex gap-1 content-spacing-sm">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 text-primary fill-primary" />
+                ))}
               </div>
-            </motion.div>
+
+              {/* Testimonial Content */}
+              <p className="text-muted-foreground content-spacing-sm leading-relaxed flex-grow font-[family-name:var(--font-inter)]">
+                "{testimonial.content}"
+              </p>
+
+              {/* Author Info */}
+              <div className="flex items-center gap-4">
+                <div className="relative w-12 h-12 rounded-full overflow-hidden">
+                  <Image 
+                    src={testimonial.avatar} 
+                    alt={testimonial.name}
+                    fill
+                    className="object-cover"
+                    sizes="48px"
+                  />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground font-[family-name:var(--font-space-grotesk)]">
+                    {testimonial.name}
+                  </h4>
+                  <p className="text-sm text-muted-foreground font-[family-name:var(--font-inter)]">
+                    {testimonial.role}
+                  </p>
+                </div>
+              </div>
+            </div>
           ))}
+        </div>
+
+        {/* Trustpilot Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={testimonialInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="text-center content-spacing"
+        >
+          <motion.a
+            href="https://www.trustpilot.com/review/cinebyte.co"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-flex items-center gap-3 bg-[#00B67A] hover:bg-[#00A169] text-white px-8 py-4 rounded-2xl font-semibold transition-all duration-150 shadow-lg hover:shadow-xl"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            <span>Read our reviews on Trustpilot</span>
+            <div className="flex items-center gap-1">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-4 h-4 fill-current" />
+              ))}
+            </div>
+          </motion.a>
         </motion.div>
 
         {/* Bottom CTA */}
@@ -226,15 +157,15 @@ export default function Testimonials() {
           initial={{ opacity: 0, y: 30 }}
           animate={testimonialInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-center mt-16"
+          className="text-center"
         >
-          <p className="text-text-secondary mb-6">
-            Ready to join our satisfied clients?
+          <p className="text-muted-foreground mb-6 font-[family-name:var(--font-inter)]">
+            Want to work with us?
           </p>
           <motion.button
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-brand-gradient hover:from-primary-700 hover:to-secondary-700 text-text-primary px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="bg-brand-gradient hover:opacity-90 text-primary-foreground px-10 py-4 rounded-2xl font-semibold text-lg transition-all duration-150 shadow-lg hover:shadow-xl hover:shadow-primary/25"
           >
             Start Your Project
           </motion.button>

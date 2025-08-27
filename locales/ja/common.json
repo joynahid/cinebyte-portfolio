@@ -1,0 +1,352 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "services": "サービス", 
+    "gallery": "ギャラリー",
+    "process": "プロセス",
+    "pricing": "料金",
+    "contact": "お問い合わせ"
+  },
+  "hero": {
+    "title": "実際に",
+    "titleHighlight": "パフォーマンスする",
+    "subtitle": "動画素材をお送りください。スクロールを止め、実際にエンゲージメントを獲得するリールをお返しします。",
+    "getStarted": "始める",
+    "viewWork": "作品を見る"
+  },
+  "services": {
+    "title": "私たちのサービス",
+    "subtitle": "ビジネス成長のためのプロフェッショナル動画コンテンツとソーシャルメディアソリューション",
+    "cta": "ビジネスを成長させる",
+    "businessGrowth": {
+      "title": "ビジネス成長動画コンテンツ",
+      "description": "ビジネス成長とコンバージョンを促進するための戦略的動画コンテンツ",
+      "features": {
+        "brandStorytelling": "ブランドストーリーテリング",
+        "leadGeneration": "リード生成",
+        "productShowcases": "プロダクトショーケース",
+        "customerTestimonials": "お客様の声"
+      }
+    },
+    "podcastEditing": {
+      "title": "ポッドキャスト編集 & クリップ",
+      "description": "プロフェッショナルなポッドキャスト編集とソーシャル配信用の魅力的な短編クリップ",
+      "features": {
+        "fullEpisodeEditing": "フルエピソード編集",
+        "highlightClips": "ハイライトクリップ",
+        "audioEnhancement": "音声強化",
+        "socialMediaCuts": "ソーシャルメディアカット"
+      }
+    },
+    "socialMediaManagement": {
+      "title": "ソーシャルメディア管理",
+      "description": "オンラインプレゼンス構築のための包括的なソーシャルメディア管理",
+      "features": {
+        "contentPlanning": "コンテンツ企画",
+        "multiPlatformPublishing": "マルチプラットフォーム配信",
+        "engagementTracking": "エンゲージメント追跡",
+        "brandVoiceConsistency": "ブランドボイスの一貫性"
+      }
+    },
+    "trendResearch": {
+      "title": "トレンド調査 & コンテンツ戦略",
+      "description": "市場調査と洞察に基づくデータ駆動型コンテンツ戦略",
+      "features": {
+        "marketResearch": "マーケットリサーチ",
+        "contentRecommendations": "コンテンツ推奨",
+        "competitorAnalysis": "競合分析",
+        "performanceInsights": "パフォーマンス洞察"
+      }
+    }
+  },
+  "videoGallery": {
+    "title": "動画ギャラリー",
+    "subtitle": "シリーズやテーマ別に整理された包括的な動画コンテンツコレクションをご覧ください",
+    "reelSeries": {
+      "title": "REELシリーズ",
+      "description": "ダイナミックなコンテンツを紹介する私たちのシグネチャーリールコレクション"
+    },
+    "primePursuit": {
+      "title": "Prime Pursuitシリーズ",
+      "description": "私たちの卓越性への追求を際立たせるプレミアムコンテンツシリーズ"
+    },
+    "featuredContent": {
+      "title": "注目コンテンツ",
+      "description": "私たちの多様なクリエイティブ能力を紹介する特別に厳選されたコンテンツ"
+    },
+    "extendedVersions": {
+      "title": "拡張版",
+      "description": "長尺フォーマットコンテンツと代替版"
+    }
+  },
+  "workflow": {
+    "title": "リール制作プロセス",
+    "subtitle": "私たちの合理化された4ステッププロセスで、コンテンツをコンセプトからバイラル準備完了まで記録的な時間で仕上げます。",
+    "step1": {
+      "title": "ブリーフ & 戦略",
+      "description": "コンテンツ目標を分析し、ブランドに最適なバイラルフォーミュラを特定します。",
+      "details": {
+        "contentStrategy": "コンテンツ戦略ディスカッション",
+        "audienceAnalysis": "ターゲット対象者分析",
+        "platformPlanning": "プラットフォーム別企画",
+        "trendResearch": "トレンド調査 & フック"
+      }
+    },
+    "step2": {
+      "title": "リール制作",
+      "description": "トレンドエフェクト、完璧なタイミング、バイラル最適化による高速編集。",
+      "details": {
+        "dynamicEditing": "ダイナミックリール編集",
+        "trendingEffects": "トレンドエフェクト & トランジション",
+        "musicSync": "音楽同期 & ビートマッチング",
+        "hookCreation": "フック作成 & ペーシング"
+      }
+    },
+    "step3": {
+      "title": "レビュー & 仕上げ",
+      "description": "ライブ前にリールを完璧にするための迅速なコラボレーティブフィードバックラウンド。",
+      "details": {
+        "instantDelivery": "即座のドラフト配信",
+        "realtimeFeedback": "リアルタイムフィードバック",
+        "fastRevisions": "高速修正サイクル",
+        "finalOptimization": "最終最適化"
+      }
+    },
+    "step4": {
+      "title": "ローンチ準備完了",
+      "description": "キャプション、ハッシュタグ、投稿戦略付きのプラットフォーム最適化配信。",
+      "details": {
+        "multiPlatformExports": "マルチプラットフォームエクスポート",
+        "optimizedThumbnails": "最適化サムネイル",
+        "captionsHashtags": "キャプション & ハッシュタグ提案",
+        "postingRecommendations": "投稿時間推奨"
+      }
+    },
+    "cta": {
+      "title": "バイラルになる準備はできましたか？",
+      "subtitle": "注目を集め、エンゲージメントを促進し、オーディエンスを拡大するリールを作成しましょう。",
+      "button": "最初のリールを作成"
+    }
+  },
+  "testimonials": {
+    "badge": "お客様の声",
+    "title": "お客様からのお声",
+    "subtitle": "私たちとの協働についてクリエイターが語ります。",
+    "trustpilot": "Trustpilotでレビューを読む",
+    "bottomCta": {
+      "question": "私たちと働きたいですか？",
+      "button": "プロジェクトを開始"
+    }
+  },
+  "pricing": {
+    "title": "コンテンツ料金プラン",
+    "subtitle": "個人のコンテンツ制作から企業レベルの戦略まで。すべてのビジネス成長のための透明な料金設定。",
+    "plans": {
+      "contentCreator": {
+        "name": "コンテンツクリエイター",
+        "price": "$297",
+        "period": "月額",
+        "description": "動画ジャーニーを始める個人クリエイターや小規模企業に最適",
+        "cta": "制作を始める",
+        "features": [
+          "4つのプロフェッショナル動画編集",
+          "ソーシャルメディアコンテンツ（リール、TikTok、YouTube Shorts）",
+          "基本ポッドキャスト編集（2エピソード）",
+          "コンテンツ企画 & 戦略",
+          "3回の修正ラウンド",
+          "マルチプラットフォームフォーマット",
+          "48時間配信",
+          "メールサポート"
+        ]
+      },
+      "businessGrowth": {
+        "name": "ビジネス成長",
+        "price": "$697",
+        "period": "月額",
+        "description": "ビジネス成長を促進するように設計された包括的動画マーケティングソリューション",
+        "cta": "ビジネスを成長させる",
+        "popular": "最も人気",
+        "features": [
+          "10つのプロフェッショナル動画編集",
+          "ブランドストーリーテリング動画",
+          "プロダクトショーケースコンテンツ",
+          "フルポッドキャスト編集（4エピソード）",
+          "ソーシャルメディア管理",
+          "トレンド調査 & コンテンツ戦略",
+          "お客様の声動画",
+          "無制限修正",
+          "24時間優先配信",
+          "専任アカウントマネージャー",
+          "パフォーマンス分析"
+        ]
+      },
+      "enterprise": {
+        "name": "エンタープライズ",
+        "price": "カスタム",
+        "period": "カスタム料金",
+        "description": "企業レベルでスケールするブランドと代理店のための完全コンテンツソリューション",
+        "cta": "お話ししましょう",
+        "features": [
+          "無制限動画コンテンツ",
+          "フルサービスコンテンツ制作",
+          "高度ポッドキャスト制作",
+          "完全ソーシャルメディア管理",
+          "カスタムブランドアニメーション",
+          "ホワイトラベルソリューション",
+          "当日ラッシュ配信",
+          "専任クリエイティブチーム",
+          "月次戦略セッション",
+          "高度分析 & レポート",
+          "カスタムインテグレーション",
+          "優先サポート & SLA"
+        ]
+      }
+    },
+    "guarantees": {
+      "satisfaction": {
+        "title": "100%満足保証",
+        "description": "お客様に気に入っていただくまで作業します。それまでは返金保証"
+      },
+      "allInOne": {
+        "title": "オールインワンソリューション",
+        "description": "動画制作、編集、ソーシャルメディア管理"
+      },
+      "scalable": {
+        "title": "スケーラブルパッケージ",
+        "description": "コンテンツクリエイターから企業レベルソリューションまで"
+      },
+      "expertTeam": {
+        "title": "エキスパートクリエイティブチーム",
+        "description": "実績のある専任プロフェッショナル"
+      }
+    },
+    "contactCta": {
+      "subtitle": "プロフェッショナル動画コンテンツでビジネス成長の準備はできましたか？カスタムソリューションが必要ですか？",
+      "button": "チームに連絡 →"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "何かエピックなものを始めましょう",
+      "title": "バイラルになる準備はできましたか？",
+      "subtitle": "アイデアを何百万人もを魅了するスクロール停止コンテンツに変換します。私たちとのつながり方を選択してください。",
+      "stats": {
+        "videos": "500+ 動画",
+        "videosDesc": "制作",
+        "views": "50M+ 視聴",
+        "viewsDesc": "生成",
+        "support": "24/7",
+        "supportDesc": "サポート"
+      }
+    },
+    "tabs": {
+      "consultation": "相談予約",
+      "message": "メッセージ送信"
+    },
+    "consultation": {
+      "title": "ディスカバリーコールをスケジュール",
+      "subtitle": "プロジェクトについて話し合い、カスタム見積もりを取得するための30分相談",
+      "coverage": "カバー内容：",
+      "coverageItems": [
+        "プロジェクトゴール & 要件",
+        "ブランド & ターゲット対象者レビュー",
+        "カスタム見積もり & タイムライン",
+        "関連ポートフォリオ例"
+      ]
+    },
+    "messageForm": {
+      "title": "メッセージを送信",
+      "subtitle": "プロジェクトについて教えてください。24時間以内に返信します",
+      "successMessage": "メッセージが正常に送信されました！すぐに連絡いたします。",
+      "errorMessage": "何かがうまくいきませんでした。もう一度お試しください。",
+      "form": {
+        "name": "お名前",
+        "namePlaceholder": "フルネーム",
+        "email": "メール",
+        "emailPlaceholder": "your.email@example.com",
+        "projectType": "プロジェクトタイプ",
+        "projectTypePlaceholder": "プロジェクトタイプを選択",
+        "budgetRange": "予算範囲",
+        "budgetRangePlaceholder": "予算範囲を選択",
+        "sampleLink": "サンプルリンク（オプション）",
+        "sampleLinkPlaceholder": "https://example.com/your-sample",
+        "uploadFiles": "ファイルアップロード（オプション）",
+        "uploadPlaceholder": "クリックしてアップロードまたはドラッグ＆ドロップ",
+        "uploadDescription": "動画、画像、またはPDFファイル",
+        "message": "メッセージ",
+        "messagePlaceholder": "プロジェクト、ゴール、特定の要件について教えてください...",
+        "sending": "送信中...",
+        "sendButton": "メッセージ送信"
+      },
+      "projectTypes": [
+        "Instagram リール",
+        "TikTok 動画",
+        "YouTube ショーツ",
+        "ソーシャルメディアコンテンツ",
+        "リールパッケージディール",
+        "ブランドコンテンツシリーズ",
+        "ユーザー生成コンテンツ",
+        "その他"
+      ],
+      "budgetRanges": [
+        "$500未満 (1-5リール)",
+        "$500 - $2,000 (5-15リール)",
+        "$2,000 - $5,000 (月額パッケージ)",
+        "$5,000+ (エンタープライズ/代理店)",
+        "まだ未定"
+      ]
+    },
+    "contactInfo": {
+      "title": "その他の連絡方法",
+      "email": {
+        "title": "メールでお問い合わせ",
+        "description": "いつでもご連絡ください",
+        "contact": "hello@cinebyte.com"
+      },
+      "phone": {
+        "title": "お電話でお問い合わせ",
+        "description": "9 AM - 6 PM EST 対応",
+        "contact": "+1 (555) 123-4567"
+      },
+      "location": {
+        "title": "ご訪問",
+        "description": "お気軽にお越しください",
+        "contact": "Los Angeles, CA"
+      },
+      "social": {
+        "title": "私たちの作品をフォロー"
+      }
+    }
+  },
+  "brands": {
+    "title": "主要ブランドから信頼"
+  },
+  "footer": {
+    "brand": {
+      "name": "CineByte",
+      "description": "世界中の視聴者を魅了するバイラルリールとショートフォームコンテンツを制作。"
+    },
+    "quickLinks": {
+      "contact": "お問い合わせ",
+      "privacy": "プライバシー",
+      "terms": "利用規約"
+    },
+    "copyright": "© 2025 CineByte. 全著作権所有。",
+    "madeWith": "愛をこめて制作",
+    "location": "バングラデシュの中心で"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "close": "閉じる",
+    "open": "開く",
+    "language": "言語",
+    "required": "*",
+    "optional": "（オプション）"
+  },
+  "meta": {
+    "title": "CineByte - プロフェッショナルリール＆ショート動画編集エージェンシー",
+    "description": "バイラルInstagramリール、TikTok動画、YouTube Shortsを専門とするプロフェッショナルリール編集エージェンシー。あなたのコンテンツをスクロールを止め、エンゲージメントを促進するショート動画に変換し、世界中の視聴者を魅了します。",
+    "keywords": "リール編集, インスタグラムリール, ティックトック編集, ユーチューブショーツ, ショート動画, バイラルコンテンツ, ソーシャルメディア編集, リールエージェンシー, コンテンツ制作, モバイル動画, シネバイト, プロ動画編集"
+  }
+}

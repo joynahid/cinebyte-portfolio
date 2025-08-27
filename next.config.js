@@ -14,8 +14,25 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
+    formats: ['image/webp', 'image/avif'],
+    minimumCacheTTL: 60,
   },
+
+  // Performance optimizations
+  experimental: {
+    optimizeCss: false,
+  },
+  compress: true,
+  poweredByHeader: false,
+  // Enable React strict mode for better development experience
+  reactStrictMode: true,
 }
 
 module.exports = nextConfig 

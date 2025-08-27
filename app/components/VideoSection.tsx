@@ -1,138 +1,294 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
-import { Play, Pause } from 'lucide-react'
-import { useState } from 'react'
+import { ArrowRight, Play } from 'lucide-react'
+import Link from 'next/link'
+import { useTranslation } from '../../lib/i18n'
 
 export default function VideoSection() {
-  const [isPlaying, setIsPlaying] = useState(true)
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  })
-
-  const videos = [
-    {
-      title: "Creative Process",
-      description: "Behind the scenes of our creative workflow",
-      thumbnail: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop",
-    },
-    {
-      title: "Innovation Lab",
-      description: "Where ideas come to life",
-      thumbnail: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=600&fit=crop",
-    },
-    {
-      title: "Client Success",
-      description: "Stories from our satisfied clients",
-      thumbnail: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+  const { t } = useTranslation()
+  
+  // Framer Motion animation variants for better performance
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.3,
+        staggerChildren: 0.1
+      }
     }
-  ]
+  }
+  
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.3,
+        ease: "easeOut"
+      }
+    }
+  }
+  
+  const imageVariants = {
+    hidden: { opacity: 0, x: 30, scale: 0.95 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      transition: {
+        duration: 0.4,
+        ease: "easeOut"
+      }
+    }
+  }
+  
+  const floatingVariants = {
+    hidden: { opacity: 0, scale: 0 },
+    visible: (index: number) => ({
+      opacity: 0.6,
+      scale: 1,
+      transition: {
+        duration: 0.3,
+        delay: 0.3 + index * 0.05,
+        ease: "easeOut"
+      }
+    })
+  }
 
   return (
-    <section ref={ref} className="py-20 px-4 relative overflow-hidden">
-      {/* Background Video Effect */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary-900/10 to-transparent"></div>
-      
-      <div className="max-w-7xl mx-auto relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-6xl font-bold text-text-primary mb-6">
-            Experience Our <span className="text-brand-gradient">Work</span>
-          </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-            Dive into our portfolio of exceptional projects and creative solutions
-          </p>
-        </motion.div>
-
-        {/* Main Featured Video */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={inView ? { opacity: 1, scale: 1 } : {}}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative mb-16 rounded-3xl overflow-hidden shadow-2xl"
-        >
-          <div className="aspect-video bg-brand-gradient relative">
-            <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=600&fit=crop"
-              alt="Featured Project"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-surface-glass-medium flex items-center justify-center">
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => setIsPlaying(!isPlaying)}
-                className="glass-light rounded-full p-6 hover:glass-medium transition-all duration-300 border border-surface-overlay-border"
-              >
-                {isPlaying ? (
-                  <Pause className="w-12 h-12 text-text-primary" />
-                ) : (
-                  <Play className="w-12 h-12 text-text-primary ml-1" />
-                )}
-              </motion.button>
-            </div>
-            <div className="absolute bottom-6 left-6 right-6">
-              <h3 className="text-2xl font-bold text-text-primary mb-2">Featured Project</h3>
-              <p className="text-text-secondary">Our latest creative masterpiece showcasing innovation and design excellence</p>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Video Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {videos.map((video, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.1 * index }}
-              whileHover={{ y: -10 }}
-              className="group cursor-pointer"
-            >
-              <div className="relative rounded-2xl overflow-hidden shadow-lg">
-                <div className="aspect-video">
-                  <img
-                    src={video.thumbnail}
-                    alt={video.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-surface-glass-medium group-hover:bg-surface-glass-light transition-all duration-300 flex items-center justify-center">
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                      className="glass-light rounded-full p-4 opacity-0 group-hover:opacity-100 transition-all duration-300"
-                    >
-                      <Play className="w-8 h-8 text-text-primary ml-0.5" />
-                    </motion.div>
-                  </div>
-                </div>
-                <div className="p-6 glass-light border-t border-glass-light">
-                  <h4 className="text-xl font-bold text-text-primary mb-2">{video.title}</h4>
-                  <p className="text-text-secondary text-sm">{video.description}</p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+    <motion.section 
+      className="relative w-full py-20 lg:py-32 overflow-hidden bg-hero-gradient"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+    >
+      {/* Lightweight Gradient Background */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <div className="absolute inset-0 bg-hero-gradient"></div>
+        {/* Subtle animated patterns for visual interest */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(62,88,121,0.15),transparent_70%)]"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_80%_20%,rgba(33,53,85,0.1),transparent_50%)]"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_80%,rgba(62,88,121,0.1),transparent_50%)]"></div>
         </div>
-
-        {/* Auto-scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="flex justify-center mt-12"
-        >
-          <div className="flex items-center gap-2 text-text-tertiary text-sm">
-            <div className="w-2 h-2 bg-accent-purple rounded-full animate-pulse"></div>
-            <span>Auto-playing content</span>
-          </div>
-        </motion.div>
       </div>
-    </section>
+
+      {/* Enhanced Backdrop Overlay with Blur */}
+      <div className="absolute inset-0 w-full h-full z-10">
+        {/* Primary gradient overlay with backdrop blur */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/40 to-background/60 backdrop-blur-sm"></div>
+        
+        {/* Radial gradient for focus with stronger blur */}
+        <div className="absolute inset-0 bg-gradient-radial from-transparent via-background/20 to-background/40 backdrop-blur-md"></div>
+        
+        {/* Subtle texture overlay with light blur */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/3 via-transparent to-secondary/3 backdrop-blur-[2px]"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-20 container-padding max-w-7xl mx-auto w-full">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          {/* Left Side - Content */}
+          <div className="text-center lg:text-left order-2 lg:order-1">
+        
+        <motion.h1
+          variants={itemVariants}
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 leading-tight tracking-tight font-[family-name:var(--font-space-grotesk)]"
+        >
+          {t('hero.title')} <span className="text-brand-gradient">{t('hero.titleHighlight')}</span>
+        </motion.h1>
+
+        <motion.p
+          variants={itemVariants}
+          className="text-base sm:text-lg text-muted-foreground mb-6 max-w-xl mx-auto lg:mx-0 leading-relaxed font-[family-name:var(--font-inter)]"
+        >
+          {t('hero.subtitle')}
+        </motion.p>
+
+        <motion.div
+          variants={itemVariants}
+          className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center lg:items-start"
+        >
+          <Link href="/contact">
+            <motion.button
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-brand-gradient hover:shadow-lg hover:shadow-primary/25 text-primary-foreground px-8 py-3 rounded-xl font-semibold text-base flex items-center gap-3 transition-all duration-150"
+            >
+              {t('hero.getStarted')} <ArrowRight size={18} />
+            </motion.button>
+          </Link>
+
+          <Link href="#gallery">
+            <motion.button
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className="border border-border text-foreground px-8 py-3 rounded-xl font-semibold text-base flex items-center gap-3 hover:bg-accent hover:border-primary transition-all duration-150"
+            >
+              <Play size={18} /> {t('hero.viewWork')}
+            </motion.button>
+          </Link>
+        </motion.div>
+          </div>
+
+          {/* Right Side - Cover Image */}
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+            <div className="relative max-w-md w-full">
+              <motion.img
+                variants={imageVariants}
+                src="/assets/cinebytecover.png"
+                alt="CineByte Cover"
+                className="w-full h-auto rounded-2xl object-cover relative z-10"
+                animate={{
+                  y: [0, -5, 0],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              />
+              
+              {/* Floating Decorative Elements */}
+              <div className="absolute inset-0 pointer-events-none">
+                {/* Sparkle 1 */}
+                <motion.div 
+                  className="absolute top-8 left-8 w-4 h-4 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full blur-sm"
+                  variants={floatingVariants}
+                  custom={0}
+                  animate={{
+                    y: [0, -3, 0],
+                    x: [0, 2, 0],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                
+                {/* Sparkle 2 */}
+                <motion.div 
+                  className="absolute top-16 right-12 w-3 h-3 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-sm"
+                  variants={floatingVariants}
+                  custom={1}
+                  animate={{
+                    y: [0, 4, 0],
+                    x: [0, -3, 0],
+                  }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                
+                {/* Floating Circle */}
+                <motion.div 
+                  className="absolute bottom-20 left-4 w-6 h-6 border-2 border-primary/30 rounded-full"
+                  variants={floatingVariants}
+                  custom={2}
+                  animate={{
+                    y: [0, -5, 0],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                
+                {/* Diamond Shape */}
+                <motion.div 
+                  className="absolute top-1/3 right-4 w-5 h-5 bg-gradient-to-r from-pink-400 to-red-500 transform rotate-45 blur-sm opacity-70"
+                  variants={floatingVariants}
+                  custom={3}
+                  animate={{
+                    y: [0, 3, 0],
+                    rotate: [45, 60, 45],
+                  }}
+                  transition={{
+                    duration: 2.2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                
+                {/* Floating Triangle */}
+                <motion.div 
+                  className="absolute bottom-12 right-8 w-0 h-0 border-l-[8px] border-r-[8px] border-b-[12px] border-l-transparent border-r-transparent border-b-cyan-400/60"
+                  variants={floatingVariants}
+                  custom={4}
+                  animate={{
+                    y: [0, -4, 0],
+                    x: [0, 2, 0],
+                  }}
+                  transition={{
+                    duration: 2.8,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                
+                {/* Glowing Dot */}
+                <motion.div 
+                  className="absolute top-1/2 left-2 w-2 h-2 bg-green-400 rounded-full shadow-lg shadow-green-400/50"
+                  variants={floatingVariants}
+                  custom={5}
+                  animate={{
+                    y: [0, -2, 0],
+                  }}
+                  transition={{
+                    duration: 1.8,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                
+                {/* Star Shape */}
+                <motion.div 
+                  className="absolute bottom-32 right-2 text-yellow-400 text-lg opacity-60"
+                  variants={floatingVariants}
+                  custom={6}
+                  animate={{
+                    y: [0, -3, 0],
+                    rotate: [0, 10, 0],
+                  }}
+                  transition={{
+                    duration: 2.3,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                >
+                  ✦
+                </motion.div>
+                
+                {/* Plus Shape */}
+                <motion.div 
+                  className="absolute top-24 right-20 text-purple-400 text-xl opacity-50 font-bold"
+                  variants={floatingVariants}
+                  custom={7}
+                  animate={{
+                    y: [0, 4, 0],
+                    rotate: [0, 15, 0],
+                  }}
+                  transition={{
+                    duration: 2.6,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                >
+                  +
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </motion.section>
   )
 }

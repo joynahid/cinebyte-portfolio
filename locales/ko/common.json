@@ -1,0 +1,352 @@
+{
+  "nav": {
+    "home": "홈",
+    "services": "서비스", 
+    "gallery": "갤러리",
+    "process": "프로세스",
+    "pricing": "가격",
+    "contact": "연락처"
+  },
+  "hero": {
+    "title": "실제로",
+    "titleHighlight": "성과를 내는",
+    "subtitle": "영상 소스를 보내주세요. 스크롤을 멈추게 하고 실제로 참여도를 높이는 릴을 돌려받으세요.",
+    "getStarted": "시작하기",
+    "viewWork": "작품 보기"
+  },
+  "services": {
+    "title": "저희 서비스",
+    "subtitle": "비즈니스 성장을 위한 전문 비디오 콘텐츠 및 소셜 미디어 솔루션",
+    "cta": "비즈니스 성장시키기",
+    "businessGrowth": {
+      "title": "비즈니스 성장 비디오 콘텐츠",
+      "description": "비즈니스 성장과 전환을 촉진하도록 설계된 전략적 비디오 콘텐츠",
+      "features": {
+        "brandStorytelling": "브랜드 스토리텔링",
+        "leadGeneration": "리드 생성",
+        "productShowcases": "제품 쇼케이스",
+        "customerTestimonials": "고객 후기"
+      }
+    },
+    "podcastEditing": {
+      "title": "팟캐스트 편집 및 클립",
+      "description": "소셜 배포를 위한 전문 팟캐스트 편집 및 매력적인 숏클립",
+      "features": {
+        "fullEpisodeEditing": "풀 에피소드 편집",
+        "highlightClips": "하이라이트 클립",
+        "audioEnhancement": "오디오 향상",
+        "socialMediaCuts": "소셜 미디어 컷"
+      }
+    },
+    "socialMediaManagement": {
+      "title": "소셜 미디어 관리",
+      "description": "온라인 존재감 구축을 위한 포괄적인 소셜 미디어 관리",
+      "features": {
+        "contentPlanning": "콘텐츠 기획",
+        "multiPlatformPublishing": "멀티 플랫폼 퍼블리싱",
+        "engagementTracking": "참여도 추적",
+        "brandVoiceConsistency": "브랜드 보이스 일관성"
+      }
+    },
+    "trendResearch": {
+      "title": "트렌드 리서치 및 콘텐츠 전략",
+      "description": "시장 조사와 인사이트를 기반으로 한 데이터 기반 콘텐츠 전략",
+      "features": {
+        "marketResearch": "시장 조사",
+        "contentRecommendations": "콘텐츠 추천",
+        "competitorAnalysis": "경쟁사 분석",
+        "performanceInsights": "성과 인사이트"
+      }
+    }
+  },
+  "videoGallery": {
+    "title": "비디오 갤러리",
+    "subtitle": "시리즈와 테마별로 정리된 포괄적인 비디오 콘텐츠 컬렉션을 탐색하세요",
+    "reelSeries": {
+      "title": "REEL 시리즈",
+      "description": "다이나믹한 콘텐츠를 보여주는 저희의 시그니처 릴 컬렉션"
+    },
+    "primePursuit": {
+      "title": "Prime Pursuit 시리즈",
+      "description": "우수성 추구를 강조하는 프리미엄 콘텐츠 시리즈"
+    },
+    "featuredContent": {
+      "title": "주요 콘텐츠",
+      "description": "다양한 창작 능력을 보여주는 특별히 선별된 콘텐츠"
+    },
+    "extendedVersions": {
+      "title": "확장 버전",
+      "description": "긴 형식 콘텐츠 및 대체 버전"
+    }
+  },
+  "workflow": {
+    "title": "릴 제작 프로세스",
+    "subtitle": "저희의 간소화된 4단계 프로세스는 콘텐츠를 컨셉에서 바이럴 준비까지 기록적인 시간 내에 완성합니다.",
+    "step1": {
+      "title": "브리프 및 전략",
+      "description": "콘텐츠 목표를 분석하고 브랜드에 완벽한 바이럴 공식을 식별합니다.",
+      "details": {
+        "contentStrategy": "콘텐츠 전략 논의",
+        "audienceAnalysis": "타겟 오디언스 분석",
+        "platformPlanning": "플랫폼별 기획",
+        "trendResearch": "트렌드 리서치 및 훅"
+      }
+    },
+    "step2": {
+      "title": "릴 제작",
+      "description": "트렌디한 효과, 완벽한 타이밍, 바이럴 최적화를 통한 빠른 편집.",
+      "details": {
+        "dynamicEditing": "다이나믹 릴 편집",
+        "trendingEffects": "트렌딩 효과 및 전환",
+        "musicSync": "음악 동기화 및 비트 매칭",
+        "hookCreation": "훅 제작 및 페이싱"
+      }
+    },
+    "step3": {
+      "title": "검토 및 다듬기",
+      "description": "라이브 전에 릴을 완벽하게 만들기 위한 빠른 협업 피드백 라운드.",
+      "details": {
+        "instantDelivery": "즉시 초안 전달",
+        "realtimeFeedback": "실시간 피드백",
+        "fastRevisions": "빠른 수정 사이클",
+        "finalOptimization": "최종 최적화"
+      }
+    },
+    "step4": {
+      "title": "런칭 준비",
+      "description": "자막, 해시태그, 게시 전략이 포함된 플랫폼 최적화 전달.",
+      "details": {
+        "multiPlatformExports": "멀티 플랫폼 내보내기",
+        "optimizedThumbnails": "최적화된 썸네일",
+        "captionsHashtags": "자막 및 해시태그 제안",
+        "postingRecommendations": "게시 시간 추천"
+      }
+    },
+    "cta": {
+      "title": "바이럴이 될 준비가 되셨나요?",
+      "subtitle": "주목을 끌고, 참여를 유도하며, 오디언스를 늘리는 릴을 만들어 보세요.",
+      "button": "첫 번째 릴 만들기"
+    }
+  },
+  "testimonials": {
+    "badge": "고객 후기",
+    "title": "고객들의 이야기",
+    "subtitle": "저희와 함께 작업한 크리에이터들의 이야기입니다.",
+    "trustpilot": "Trustpilot에서 리뷰 읽기",
+    "bottomCta": {
+      "question": "저희와 함께 일하고 싶으신가요?",
+      "button": "프로젝트 시작하기"
+    }
+  },
+  "pricing": {
+    "title": "콘텐츠 가격 플랜",
+    "subtitle": "개인 콘텐츠 제작부터 기업 수준의 전략까지. 모든 비즈니스 성장을 위한 투명한 가격.",
+    "plans": {
+      "contentCreator": {
+        "name": "콘텐츠 크리에이터",
+        "price": "$297",
+        "period": "월간",
+        "description": "비디오 여정을 시작하는 개인 크리에이터와 소규모 비즈니스에 완벽",
+        "cta": "제작 시작하기",
+        "features": [
+          "4개의 전문 비디오 편집",
+          "소셜 미디어 콘텐츠 (릴, 틱톡, 유튜브 쇼츠)",
+          "기본 팟캐스트 편집 (2 에피소드)",
+          "콘텐츠 기획 및 전략",
+          "3회 수정 라운드",
+          "멀티 플랫폼 형식",
+          "48시간 배송",
+          "이메일 지원"
+        ]
+      },
+      "businessGrowth": {
+        "name": "비즈니스 성장",
+        "price": "$697",
+        "period": "월간",
+        "description": "비즈니스 성장을 촉진하도록 설계된 포괄적인 비디오 마케팅 솔루션",
+        "cta": "비즈니스 성장시키기",
+        "popular": "가장 인기",
+        "features": [
+          "10개의 전문 비디오 편집",
+          "브랜드 스토리텔링 비디오",
+          "제품 쇼케이스 콘텐츠",
+          "풀 팟캐스트 편집 (4 에피소드)",
+          "소셜 미디어 관리",
+          "트렌드 리서치 및 콘텐츠 전략",
+          "고객 후기 비디오",
+          "무제한 수정",
+          "24시간 우선 배송",
+          "전담 계정 관리자",
+          "성과 분석"
+        ]
+      },
+      "enterprise": {
+        "name": "엔터프라이즈",
+        "price": "맞춤형",
+        "period": "맞춤 가격",
+        "description": "기업 수준에서 확장하는 브랜드와 에이전시를 위한 완전한 콘텐츠 솔루션",
+        "cta": "상담하기",
+        "features": [
+          "무제한 비디오 콘텐츠",
+          "풀서비스 콘텐츠 제작",
+          "고급 팟캐스트 제작",
+          "완전한 소셜 미디어 관리",
+          "맞춤형 브랜드 애니메이션",
+          "화이트라벨 솔루션",
+          "당일 긴급 배송",
+          "전담 크리에이티브 팀",
+          "월간 전략 세션",
+          "고급 분석 및 보고",
+          "맞춤형 통합",
+          "우선 지원 및 SLA"
+        ]
+      }
+    },
+    "guarantees": {
+      "satisfaction": {
+        "title": "100% 만족 보장",
+        "description": "마음에 들 때까지 작업하거나 환불"
+      },
+      "allInOne": {
+        "title": "올인원 솔루션",
+        "description": "비디오 제작, 편집 및 소셜 미디어 관리"
+      },
+      "scalable": {
+        "title": "확장 가능한 패키지",
+        "description": "콘텐츠 크리에이터부터 기업 수준 솔루션까지"
+      },
+      "expertTeam": {
+        "title": "전문 크리에이티브 팀",
+        "description": "검증된 실적을 가진 전담 전문가"
+      }
+    },
+    "contactCta": {
+      "subtitle": "전문 비디오 콘텐츠로 비즈니스를 성장시킬 준비가 되셨나요? 맞춤형 솔루션이 필요하신가요?",
+      "button": "팀에 문의하기 →"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "특별한 것을 시작해 보세요",
+      "title": "바이럴이 될 준비가 되셨나요?",
+      "subtitle": "아이디어를 수백만 명을 매혹하는 스크롤 멈춤 콘텐츠로 변환하세요. 저희와 연결하는 방법을 선택하세요.",
+      "stats": {
+        "videos": "500+ 비디오",
+        "videosDesc": "제작",
+        "views": "50M+ 조회수",
+        "viewsDesc": "생성",
+        "support": "24/7",
+        "supportDesc": "지원"
+      }
+    },
+    "tabs": {
+      "consultation": "상담 예약",
+      "message": "메시지 보내기"
+    },
+    "consultation": {
+      "title": "디스커버리 콜 예약하기",
+      "subtitle": "프로젝트를 논의하고 맞춤 견적을 받기 위한 30분 상담",
+      "coverage": "다룰 내용:",
+      "coverageItems": [
+        "프로젝트 목표 및 요구사항",
+        "브랜드 및 타겟 오디언스 검토",
+        "맞춤 견적 및 일정",
+        "관련 포트폴리오 예시"
+      ]
+    },
+    "messageForm": {
+      "title": "메시지 보내기",
+      "subtitle": "프로젝트에 대해 알려주시면 24시간 내에 답변드리겠습니다",
+      "successMessage": "메시지가 성공적으로 전송되었습니다! 곧 연락드리겠습니다.",
+      "errorMessage": "문제가 발생했습니다. 다시 시도해 주세요.",
+      "form": {
+        "name": "이름",
+        "namePlaceholder": "성명",
+        "email": "이메일",
+        "emailPlaceholder": "your.email@example.com",
+        "projectType": "프로젝트 유형",
+        "projectTypePlaceholder": "프로젝트 유형 선택",
+        "budgetRange": "예산 범위",
+        "budgetRangePlaceholder": "예산 범위 선택",
+        "sampleLink": "샘플 링크 (선택사항)",
+        "sampleLinkPlaceholder": "https://example.com/your-sample",
+        "uploadFiles": "파일 업로드 (선택사항)",
+        "uploadPlaceholder": "클릭하여 업로드하거나 드래그 앤 드롭",
+        "uploadDescription": "비디오, 이미지 또는 PDF 파일",
+        "message": "메시지",
+        "messagePlaceholder": "프로젝트, 목표 및 특정 요구사항에 대해 알려주세요...",
+        "sending": "전송 중...",
+        "sendButton": "메시지 보내기"
+      },
+      "projectTypes": [
+        "인스타그램 릴",
+        "틱톡 비디오",
+        "유튜브 쇼츠",
+        "소셜 미디어 콘텐츠",
+        "릴 패키지 딜",
+        "브랜드 콘텐츠 시리즈",
+        "사용자 제작 콘텐츠",
+        "기타"
+      ],
+      "budgetRanges": [
+        "$500 미만 (1-5 릴)",
+        "$500 - $2,000 (5-15 릴)",
+        "$2,000 - $5,000 (월간 패키지)",
+        "$5,000+ (기업/에이전시)",
+        "아직 확실하지 않음"
+      ]
+    },
+    "contactInfo": {
+      "title": "다른 연결 방법",
+      "email": {
+        "title": "이메일 보내기",
+        "description": "언제든지 연락주세요",
+        "contact": "hello@cinebyte.com"
+      },
+      "phone": {
+        "title": "전화하기",
+        "description": "오전 9시 - 오후 6시 EST 이용 가능",
+        "contact": "+1 (555) 123-4567"
+      },
+      "location": {
+        "title": "방문하기",
+        "description": "인사하러 오세요",
+        "contact": "Los Angeles, CA"
+      },
+      "social": {
+        "title": "저희 작업 팔로우하기"
+      }
+    }
+  },
+  "brands": {
+    "title": "주요 브랜드의 신뢰"
+  },
+  "footer": {
+    "brand": {
+      "name": "CineByte",
+      "description": "전 세계 관객을 사로잡는 바이럴 릴과 숏폼 콘텐츠 제작."
+    },
+    "quickLinks": {
+      "contact": "연락처",
+      "privacy": "개인정보",
+      "terms": "약관"
+    },
+    "copyright": "© 2025 CineByte. 모든 권리 보유.",
+    "madeWith": "사랑으로 제작",
+    "location": "방글라데시 중심에서"
+  },
+  "common": {
+    "loading": "로딩 중...",
+    "error": "오류",
+    "close": "닫기",
+    "open": "열기",
+    "language": "언어",
+    "required": "*",
+    "optional": "(선택사항)"
+  },
+  "meta": {
+    "title": "CineByte - 전문 릴 & 숏폼 비디오 편집 에이전시",
+    "description": "바이럴 인스타그램 릴, 틱톡 비디오, 유튜브 쇼츠를 전문으로 하는 프로페셔널 릴 편집 에이전시입니다. 여러분의 콘텐츠를 스크롤을 멈추게 하고 참여도를 높이는 숏폼 비디오로 변환하여 전 세계 시청자들을 사로잡습니다.",
+    "keywords": "릴 편집, 인스타그램 릴, 틱톡 편집, 유튜브 쇼츠, 숏폼 비디오, 바이럴 콘텐츠, 소셜미디어 편집, 릴 에이전시, 콘텐츠 제작, 모바일 비디오, 시네바이트, 전문 비디오 편집"
+  }
+}

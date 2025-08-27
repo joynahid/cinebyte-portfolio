@@ -1,0 +1,352 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services", 
+    "gallery": "Galerie",
+    "process": "Processus",
+    "pricing": "Tarifs",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Nous créons des Reels qui",
+    "titleHighlight": "Performent vraiment",
+    "subtitle": "Envoyez-nous vos images. Recevez des reels captivants qui génèrent un véritable engagement.",
+    "getStarted": "Commencer",
+    "viewWork": "Voir nos créations"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Contenu vidéo professionnel et solutions de médias sociaux pour développer votre entreprise",
+    "cta": "Développer Votre Entreprise",
+    "businessGrowth": {
+      "title": "Contenu Vidéo de Croissance d'Entreprise",
+      "description": "Contenu vidéo stratégique conçu pour stimuler la croissance et les conversions de l'entreprise",
+      "features": {
+        "brandStorytelling": "Storytelling de Marque",
+        "leadGeneration": "Génération de Leads",
+        "productShowcases": "Présentation de Produits",
+        "customerTestimonials": "Témoignages Clients"
+      }
+    },
+    "podcastEditing": {
+      "title": "Montage de Podcast & Clips",
+      "description": "Montage professionnel de podcasts et clips courts captivants pour la distribution sociale",
+      "features": {
+        "fullEpisodeEditing": "Montage d'Épisode Complet",
+        "highlightClips": "Clips Highlights",
+        "audioEnhancement": "Amélioration Audio",
+        "socialMediaCuts": "Extraits Médias Sociaux"
+      }
+    },
+    "socialMediaManagement": {
+      "title": "Gestion des Médias Sociaux",
+      "description": "Gestion complète des médias sociaux pour développer votre présence en ligne",
+      "features": {
+        "contentPlanning": "Planification de Contenu",
+        "multiPlatformPublishing": "Publication Multi-Plateforme",
+        "engagementTracking": "Suivi d'Engagement",
+        "brandVoiceConsistency": "Cohérence de la Voix de Marque"
+      }
+    },
+    "trendResearch": {
+      "title": "Recherche de Tendances & Stratégie de Contenu",
+      "description": "Stratégies de contenu basées sur les données et la recherche de marché",
+      "features": {
+        "marketResearch": "Recherche de Marché",
+        "contentRecommendations": "Recommandations de Contenu",
+        "competitorAnalysis": "Analyse Concurrentielle",
+        "performanceInsights": "Insights de Performance"
+      }
+    }
+  },
+  "videoGallery": {
+    "title": "Galerie Vidéo",
+    "subtitle": "Explorez notre collection complète de contenu vidéo, organisée par séries et thèmes",
+    "reelSeries": {
+      "title": "Série REEL",
+      "description": "Notre collection signature de reels présentant du contenu dynamique"
+    },
+    "primePursuit": {
+      "title": "Série Prime Pursuit",
+      "description": "Série de contenu premium mettant en avant notre quête d'excellence"
+    },
+    "featuredContent": {
+      "title": "Contenu Vedette",
+      "description": "Contenu spécialement sélectionné présentant nos diverses capacités créatives"
+    },
+    "extendedVersions": {
+      "title": "Versions Étendues",
+      "description": "Contenu de format plus long et versions alternatives"
+    }
+  },
+  "workflow": {
+    "title": "Processus de Production de Reels",
+    "subtitle": "Notre processus optimisé en 4 étapes fait passer votre contenu du concept au viral en un temps record.",
+    "step1": {
+      "title": "Brief & Stratégie",
+      "description": "Nous analysons vos objectifs de contenu et identifions la formule virale parfaite pour votre marque.",
+      "details": {
+        "contentStrategy": "Discussion de stratégie de contenu",
+        "audienceAnalysis": "Analyse du public cible",
+        "platformPlanning": "Planification spécifique à la plateforme",
+        "trendResearch": "Recherche de tendances & hooks"
+      }
+    },
+    "step2": {
+      "title": "Création de Reel",
+      "description": "Montage rapide avec des effets tendance, un timing parfait et une optimisation virale.",
+      "details": {
+        "dynamicEditing": "Montage dynamique de reel",
+        "trendingEffects": "Effets tendance & transitions",
+        "musicSync": "Synchronisation musicale & matching de beat",
+        "hookCreation": "Création de hook & rythme"
+      }
+    },
+    "step3": {
+      "title": "Révision & Polissage",
+      "description": "Tours de feedback collaboratif rapides pour perfectionner votre reel avant la mise en ligne.",
+      "details": {
+        "instantDelivery": "Livraison instantanée du brouillon",
+        "realtimeFeedback": "Feedback en temps réel",
+        "fastRevisions": "Cycles de révision rapides",
+        "finalOptimization": "Optimisation finale"
+      }
+    },
+    "step4": {
+      "title": "Prêt au Lancement",
+      "description": "Livraison optimisée pour la plateforme avec sous-titres, hashtags et stratégie de publication.",
+      "details": {
+        "multiPlatformExports": "Exports multi-plateformes",
+        "optimizedThumbnails": "Miniatures optimisées",
+        "captionsHashtags": "Suggestions de sous-titres & hashtags",
+        "postingRecommendations": "Recommandations d'horaires de publication"
+      }
+    },
+    "cta": {
+      "title": "Prêt à devenir viral ?",
+      "subtitle": "Créons des reels qui captent l'attention, stimulent l'engagement et développent votre audience.",
+      "button": "Créer Votre Premier Reel"
+    }
+  },
+  "testimonials": {
+    "badge": "Témoignages Clients",
+    "title": "Ce Que Disent Nos Clients",
+    "subtitle": "Voici ce que les créateurs disent de leur collaboration avec nous.",
+    "trustpilot": "Lisez nos avis sur Trustpilot",
+    "bottomCta": {
+      "question": "Envie de travailler avec nous ?",
+      "button": "Démarrer Votre Projet"
+    }
+  },
+  "pricing": {
+    "title": "Plans Tarifaires de Contenu",
+    "subtitle": "De la création de contenu individuel aux stratégies de niveau entreprise. Tarification transparente pour la croissance de chaque entreprise.",
+    "plans": {
+      "contentCreator": {
+        "name": "Créateur de Contenu",
+        "price": "297€",
+        "period": "par mois",
+        "description": "Parfait pour les créateurs individuels et les petites entreprises commençant leur parcours vidéo",
+        "cta": "Commencer à Créer",
+        "features": [
+          "4 montages vidéo professionnels",
+          "Contenu médias sociaux (Reels, TikTok, YouTube Shorts)",
+          "Montage podcast de base (2 épisodes)",
+          "Planification de contenu & stratégie",
+          "3 tours de révisions",
+          "Formats multi-plateformes",
+          "Livraison en 48 heures",
+          "Support par e-mail"
+        ]
+      },
+      "businessGrowth": {
+        "name": "Croissance d'Entreprise",
+        "price": "697€",
+        "period": "par mois",
+        "description": "Solution de marketing vidéo complète conçue pour stimuler la croissance de l'entreprise",
+        "cta": "Développer Votre Entreprise",
+        "popular": "Le Plus Populaire",
+        "features": [
+          "10 montages vidéo professionnels",
+          "Vidéos de storytelling de marque",
+          "Contenu de présentation de produits",
+          "Montage podcast complet (4 épisodes)",
+          "Gestion des médias sociaux",
+          "Recherche de tendances & stratégie de contenu",
+          "Vidéos de témoignages clients",
+          "Révisions illimitées",
+          "Livraison prioritaire en 24 heures",
+          "Gestionnaire de compte dédié",
+          "Analyses de performance"
+        ]
+      },
+      "enterprise": {
+        "name": "Entreprise",
+        "price": "Sur mesure",
+        "period": "tarification personnalisée",
+        "description": "Solution de contenu complète pour les marques et agences à l'échelle entreprise",
+        "cta": "Parlons-en",
+        "features": [
+          "Contenu vidéo illimité",
+          "Production de contenu full-service",
+          "Production podcast avancée",
+          "Gestion complète des médias sociaux",
+          "Animations de marque personnalisées",
+          "Solutions en marque blanche",
+          "Livraison rush le jour même",
+          "Équipe créative dédiée",
+          "Sessions de stratégie mensuelles",
+          "Analyses & rapports avancés",
+          "Intégrations personnalisées",
+          "Support prioritaire & SLA"
+        ]
+      }
+    },
+    "guarantees": {
+      "satisfaction": {
+        "title": "Garantie de Satisfaction à 100%",
+        "description": "Nous travaillons avec vous jusqu'à ce que vous l'aimiez, ou remboursement"
+      },
+      "allInOne": {
+        "title": "Solution Tout-en-Un",
+        "description": "Production vidéo, montage et gestion des médias sociaux"
+      },
+      "scalable": {
+        "title": "Packages Évolutifs",
+        "description": "Des créateurs de contenu aux solutions de niveau entreprise"
+      },
+      "expertTeam": {
+        "title": "Équipe Créative Experte",
+        "description": "Professionnels dédiés avec des antécédents prouvés"
+      }
+    },
+    "contactCta": {
+      "subtitle": "Prêt à développer votre entreprise avec du contenu vidéo professionnel ? Besoin d'une solution personnalisée ?",
+      "button": "Contactez notre équipe →"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Commençons Quelque Chose d'Épique",
+      "title": "Prêt à Devenir Viral ?",
+      "subtitle": "Transformez vos idées en contenu captivant qui fascine des millions. Choisissez comment vous aimeriez vous connecter avec nous.",
+      "stats": {
+        "videos": "500+ Vidéos",
+        "videosDesc": "Créées",
+        "views": "50M+ Vues",
+        "viewsDesc": "Générées",
+        "support": "24/7",
+        "supportDesc": "Support"
+      }
+    },
+    "tabs": {
+      "consultation": "Réserver Consultation",
+      "message": "Envoyer Message"
+    },
+    "consultation": {
+      "title": "Planifiez Votre Appel de Découverte",
+      "subtitle": "Consultation de 30 minutes pour discuter de votre projet et obtenir un devis personnalisé",
+      "coverage": "Ce que nous couvrirons :",
+      "coverageItems": [
+        "Objectifs et exigences du projet",
+        "Révision de la marque et du public cible",
+        "Devis personnalisé et calendrier",
+        "Exemples de portfolio pertinents"
+      ]
+    },
+    "messageForm": {
+      "title": "Envoyez-nous un Message",
+      "subtitle": "Parlez-nous de votre projet et nous vous répondrons dans les 24 heures",
+      "successMessage": "Message envoyé avec succès ! Nous vous recontacterons bientôt.",
+      "errorMessage": "Quelque chose s'est mal passé. Veuillez réessayer.",
+      "form": {
+        "name": "Nom",
+        "namePlaceholder": "Votre nom complet",
+        "email": "E-mail",
+        "emailPlaceholder": "votre.email@exemple.com",
+        "projectType": "Type de Projet",
+        "projectTypePlaceholder": "Sélectionnez le type de projet",
+        "budgetRange": "Fourchette Budgétaire",
+        "budgetRangePlaceholder": "Sélectionnez la fourchette budgétaire",
+        "sampleLink": "Lien d'Exemple (Optionnel)",
+        "sampleLinkPlaceholder": "https://exemple.com/votre-exemple",
+        "uploadFiles": "Télécharger Fichiers (Optionnel)",
+        "uploadPlaceholder": "Cliquez pour télécharger ou glissez-déposez",
+        "uploadDescription": "Fichiers vidéo, image ou PDF",
+        "message": "Message",
+        "messagePlaceholder": "Parlez-nous de votre projet, objectifs et exigences spécifiques...",
+        "sending": "Envoi en cours...",
+        "sendButton": "Envoyer Message"
+      },
+      "projectTypes": [
+        "Instagram Reels",
+        "Vidéos TikTok",
+        "YouTube Shorts",
+        "Contenu Médias Sociaux",
+        "Package Deal Reels",
+        "Série de Contenu de Marque",
+        "Contenu Généré par l'Utilisateur",
+        "Autre"
+      ],
+      "budgetRanges": [
+        "Moins de 500€ (1-5 reels)",
+        "500€ - 2 000€ (5-15 reels)",
+        "2 000€ - 5 000€ (Package mensuel)",
+        "5 000€+ (Entreprise/Agence)",
+        "Pas encore sûr"
+      ]
+    },
+    "contactInfo": {
+      "title": "Autres Moyens de Se Connecter",
+      "email": {
+        "title": "Envoyez-nous un E-mail",
+        "description": "Écrivez-nous à tout moment",
+        "contact": "hello@cinebyte.com"
+      },
+      "phone": {
+        "title": "Appelez-nous",
+        "description": "Disponible 9h - 18h CET",
+        "contact": "+1 (555) 123-4567"
+      },
+      "location": {
+        "title": "Visitez-nous",
+        "description": "Venez dire bonjour",
+        "contact": "Los Angeles, CA"
+      },
+      "social": {
+        "title": "Suivez Notre Travail"
+      }
+    }
+  },
+  "brands": {
+    "title": "Approuvé par les Marques Leaders"
+  },
+  "footer": {
+    "brand": {
+      "name": "CineByte",
+      "description": "Créer des reels viraux et du contenu court qui captive les audiences du monde entier."
+    },
+    "quickLinks": {
+      "contact": "Contact",
+      "privacy": "Confidentialité",
+      "terms": "Conditions"
+    },
+    "copyright": "© 2025 CineByte. Tous droits réservés.",
+    "madeWith": "Fabriqué avec amour",
+    "location": "au cœur du Bangladesh"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "close": "Fermer",
+    "open": "Ouvrir",
+    "language": "Langue",
+    "required": "*",
+    "optional": "(Optionnel)"
+  },
+  "meta": {
+    "title": "CineByte - Agence Professionnelle de Montage de Reels et Vidéos Courtes",
+    "description": "Agence professionnelle de montage de reels spécialisée dans les Instagram Reels viraux, vidéos TikTok et YouTube Shorts. Nous transformons votre contenu en vidéos courtes captivantes qui stimulent l'engagement et captivent les audiences mondiales.",
+    "keywords": "montage reels, instagram reels, montage tiktok, youtube shorts, vidéos courtes, contenu viral, montage réseaux sociaux, agence reels, création contenu, vidéo mobile, cinebyte, montage vidéo professionnel"
+  }
+}

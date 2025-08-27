@@ -1,9 +1,10 @@
 'use client'
 
+import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { 
-  Video, 
+import {
+  Video,
   Edit3,
   Image,
   Smartphone,
@@ -12,8 +13,26 @@ import {
   Play,
   Mic,
   ArrowRight,
-  CheckCircle
+  CheckCircle,
+  Lightbulb,
+  PenTool,
+  Camera,
+  Clapperboard,
+  Clock,
+  TrendingUp,
+  Music,
+  Target,
+  BarChart3,
+  Palette,
+  Monitor,
+  Smartphone as Mobile,
+  Users,
+  Search,
+  Film,
+  Sparkles,
+  LineChart
 } from 'lucide-react'
+import Link from 'next/link'
 
 const Services = () => {
   const [servicesRef, servicesInView] = useInView({
@@ -21,117 +40,172 @@ const Services = () => {
     threshold: 0.1,
   })
 
+  // Feature icons with colors
+  const getFeatureIcon = (feature: string, serviceIndex: number) => {
+    const iconMap: { [key: string]: { icon: React.ReactNode; color: string } } = {
+      // Business Growth Video Content
+      'Brand Storytelling': { icon: <Film className="w-4 h-4" />, color: 'text-blue-500' },
+      'Lead Generation': { icon: <Target className="w-4 h-4" />, color: 'text-green-500' },
+      'Product Showcases': { icon: <Camera className="w-4 h-4" />, color: 'text-purple-500' },
+      'Customer Testimonials': { icon: <Users className="w-4 h-4" />, color: 'text-orange-500' },
+
+      // Podcast Editing & Clips
+      'Full Episode Editing': { icon: <Edit3 className="w-4 h-4" />, color: 'text-indigo-500' },
+      'Highlight Clips': { icon: <Clapperboard className="w-4 h-4" />, color: 'text-cyan-500' },
+      'Audio Enhancement': { icon: <Mic className="w-4 h-4" />, color: 'text-green-600' },
+      'Social Media Cuts': { icon: <Smartphone className="w-4 h-4" />, color: 'text-pink-500' },
+
+      // Social Media Management
+      'Content Planning': { icon: <Clock className="w-4 h-4" />, color: 'text-orange-500' },
+      'Multi-Platform Publishing': { icon: <Monitor className="w-4 h-4" />, color: 'text-slate-500' },
+      'Engagement Tracking': { icon: <BarChart3 className="w-4 h-4" />, color: 'text-cyan-500' },
+      'Brand Voice Consistency': { icon: <CheckCircle className="w-4 h-4" />, color: 'text-emerald-500' },
+
+      // Trend Research & Content Strategy
+      'Market Research': { icon: <Search className="w-4 h-4" />, color: 'text-emerald-600' },
+      'Content Recommendations': { icon: <Lightbulb className="w-4 h-4" />, color: 'text-yellow-500' },
+      'Competitor Analysis': { icon: <LineChart className="w-4 h-4" />, color: 'text-blue-600' },
+      'Performance Insights': { icon: <TrendingUp className="w-4 h-4" />, color: 'text-green-600' },
+    }
+
+    return iconMap[feature] || { icon: <CheckCircle className="w-4 h-4" />, color: 'text-primary' }
+  }
+
   const services = [
     {
-      icon: <Video className="w-6 h-6" />,
-      title: "Video Production",
-      description: "Professional cinematic storytelling with cutting-edge production techniques"
+      icon: <TrendingUp className="w-8 h-8" />,
+      iconColor: "text-blue-600",
+      bgColor: "bg-blue-50",
+      borderColor: "border-blue-200",
+      title: "Business Growth Video Content",
+      description: "Strategic video content designed to drive business growth and conversions",
+      features: ["Brand Storytelling", "Lead Generation", "Product Showcases", "Customer Testimonials"]
     },
     {
-      icon: <Edit3 className="w-6 h-6" />,
-      title: "Reel Editing",
-      description: "Dynamic social media reels that capture attention and drive engagement"
+      icon: <Mic className="w-8 h-8" />,
+      iconColor: "text-purple-600",
+      bgColor: "bg-purple-50",
+      borderColor: "border-purple-200",
+      title: "Podcast Editing & Clips",
+      description: "Professional podcast editing and engaging short clips for social distribution",
+      features: ["Full Episode Editing", "Highlight Clips", "Audio Enhancement", "Social Media Cuts"]
     },
     {
-      icon: <Image className="w-6 h-6" />,
-      title: "Thumbnail Design",
-      description: "Eye-catching thumbnails that boost click-through rates and viewer engagement"
+      icon: <Users className="w-8 h-8" />,
+      iconColor: "text-green-600",
+      bgColor: "bg-green-50",
+      borderColor: "border-green-200",
+      title: "Social Media Management",
+      description: "Comprehensive social media management to build your online presence",
+      features: ["Content Planning", "Multi-Platform Publishing", "Engagement Tracking", "Brand Voice Consistency"]
     },
     {
-      icon: <Smartphone className="w-6 h-6" />,
-      title: "Short Form Videos",
-      description: "Viral-ready content optimized for TikTok, Instagram, and other platforms"
-    },
-    {
-      icon: <Youtube className="w-6 h-6" />,
-      title: "YouTube Videos",
-      description: "Long-form content creation with professional editing and optimization"
-    },
-    {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Ad Creatives",
-      description: "High-converting video advertisements for digital marketing campaigns"
-    },
-    {
-      icon: <Play className="w-6 h-6" />,
-      title: "Demo Videos",
-      description: "Product demonstrations and explainer videos that showcase your offerings"
-    },
-    {
-      icon: <Mic className="w-6 h-6" />,
-      title: "Podcasts",
-      description: "Professional podcast production from recording to final edit and distribution"
+      icon: <Search className="w-8 h-8" />,
+      iconColor: "text-orange-600",
+      bgColor: "bg-orange-50",
+      borderColor: "border-orange-200",
+      title: "Trend Research & Content Strategy",
+      description: "Data-driven content strategies based on market research and insights",
+      features: ["Market Research", "Content Recommendations", "Competitor Analysis", "Performance Insights"]
     }
   ]
 
   return (
-    <section ref={servicesRef} className="py-20 px-4 relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImRvdHMiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMiIgZmlsbD0iI2ZmZmZmZiIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNkb3RzKSIvPjwvc3ZnPg==')] "></div>
+    <section ref={servicesRef} className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      {/* Simplified background */}
+      <div className="absolute inset-0 opacity-[0.02]">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMSIgZmlsbD0iI2ZmZmZmZiIvPjwvc3ZnPg==')] "></div>
       </div>
 
-      <div className="max-w-5xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={servicesInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          transition={{ duration: 0.5 }}
+          className="text-center mb-8 sm:mb-12"
         >
-          <h2 className="text-4xl md:text-6xl font-bold text-text-primary mb-6 font-space">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4 font-[family-name:var(--font-space-grotesk)]">
             Our <span className="text-brand-gradient">Services</span>
           </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-            Comprehensive video production services that bring your vision to life
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto font-[family-name:var(--font-inter)]">
+            Professional video content and social media solutions to grow your business
           </p>
         </motion.div>
 
-        <div className="space-y-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {services.map((service, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: -30 }}
-              animate={servicesInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{ x: 10 }}
-              className="group glass-light rounded-2xl p-6 hover:glass-medium transition-all duration-300 border border-glass-light cursor-pointer"
+              initial={{ opacity: 0, y: 30 }}
+              animate={servicesInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
+              className="group bg-gradient-to-br from-card/90 to-card/60 backdrop-blur-sm border border-border rounded-xl p-4 sm:p-5 transition-all duration-150 relative overflow-hidden"
             >
-              <div className="flex items-center gap-6">
-                <div className="flex-shrink-0 p-3 rounded-xl bg-gradient-to-br from-primary-500/20 to-secondary-500/20 text-accent-purple group-hover:from-primary-500/30 group-hover:to-secondary-500/30 transition-all duration-300">
-                  {service.icon}
-                </div>
-                
-                <div className="flex-grow">
-                  <h3 className="text-xl md:text-2xl font-bold text-text-primary mb-2 font-space group-hover:text-brand-gradient transition-all duration-300">
+              {/* Compact background accent */}
+              <div className={`absolute top-0 right-0 w-16 h-16 ${service.bgColor} rounded-full opacity-20 blur-2xl -translate-y-4 translate-x-4`}></div>
+
+              <div className="relative z-10">
+                {/* Compact icon and title in same row */}
+                <div className="flex items-center gap-3 mb-3">
+                  <div className={`w-8 h-8 sm:w-10 sm:h-10 ${service.bgColor} ${service.borderColor} border rounded-lg flex items-center justify-center flex-shrink-0`}>
+                    <div className={service.iconColor}>
+                      {React.cloneElement(service.icon as React.ReactElement, {
+                        className: "w-4 h-4 sm:w-5 sm:h-5"
+                      })}
+                    </div>
+                  </div>
+                  <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground font-[family-name:var(--font-space-grotesk)]">
                     {service.title}
                   </h3>
-                  <p className="text-text-secondary leading-relaxed">
-                    {service.description}
-                  </p>
                 </div>
-                
-                <div className="flex-shrink-0">
-                  <CheckCircle className="w-6 h-6 text-primary-400 opacity-0 group-hover:opacity-100 transition-all duration-300" />
+
+                <p className="text-xs sm:text-sm text-muted-foreground mb-3 font-[family-name:var(--font-inter)] leading-relaxed">
+                  {service.description}
+                </p>
+
+                {/* Compact features as tags */}
+                <div className="flex flex-wrap gap-1.5">
+                  {service.features.map((feature, featureIndex) => {
+                    const { icon, color } = getFeatureIcon(feature, index)
+                    return (
+                      <motion.div
+                        key={featureIndex}
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={servicesInView ? { opacity: 1, scale: 1 } : {}}
+                        transition={{ duration: 0.3, delay: index * 0.05 + featureIndex * 0.02 }}
+                        className="flex items-center gap-1 text-xs bg-background/50 backdrop-blur-sm border border-border/50 rounded-md px-2 py-1 text-muted-foreground"
+                      >
+                        <div className={`${color} flex-shrink-0`}>
+                          {React.cloneElement(icon as React.ReactElement, {
+                            className: "w-3 h-3"
+                          })}
+                        </div>
+                        <span className="truncate">{feature}</span>
+                      </motion.div>
+                    )
+                  })}
                 </div>
               </div>
             </motion.div>
           ))}
         </div>
 
-        {/* CTA at the bottom of services */}
+        {/* Compact CTA */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={servicesInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-center mt-16"
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="text-center mt-8 sm:mt-12"
         >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-brand-gradient hover:from-primary-700 hover:to-secondary-700 text-text-primary px-8 py-4 rounded-full font-semibold flex items-center gap-2 mx-auto transition-all duration-300 shadow-lg hover:shadow-xl"
-          >
-            Get Started Today <ArrowRight size={20} />
-          </motion.button>
+          <Link href="/contact">
+            <motion.button
+              whileHover={{ scale: 1.02, y: -1 }}
+              whileTap={{ scale: 0.98 }}
+              className="bg-brand-gradient hover:opacity-90 text-primary-foreground px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base flex items-center gap-2 mx-auto transition-all duration-150 shadow-lg hover:shadow-xl hover:shadow-primary/20"
+            >
+              Grow Your Business <ArrowRight size={16} className="sm:w-4 sm:h-4" />
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>

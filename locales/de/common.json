@@ -1,0 +1,352 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Dienstleistungen", 
+    "gallery": "Galerie",
+    "process": "Prozess",
+    "pricing": "Preise",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Wir erstellen Reels, die wirklich",
+    "titleHighlight": "Funktionieren",
+    "subtitle": "Senden Sie uns Ihr Material. Erhalten Sie scroll-stoppende Reels, die tatsächlich Engagement erzielen.",
+    "getStarted": "Loslegen",
+    "viewWork": "Arbeiten ansehen"
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Professionelle Videoinhalte und Social-Media-Lösungen für das Wachstum Ihres Unternehmens",
+    "cta": "Ihr Unternehmen wachsen lassen",
+    "businessGrowth": {
+      "title": "Unternehmenswachstum Video-Inhalte",
+      "description": "Strategische Videoinhalte zur Förderung des Unternehmenswachstums und von Conversions",
+      "features": {
+        "brandStorytelling": "Marken-Storytelling",
+        "leadGeneration": "Lead-Generierung",
+        "productShowcases": "Produktpräsentationen",
+        "customerTestimonials": "Kundenbewertungen"
+      }
+    },
+    "podcastEditing": {
+      "title": "Podcast-Bearbeitung & Clips",
+      "description": "Professionelle Podcast-Bearbeitung und ansprechende kurze Clips für die soziale Verteilung",
+      "features": {
+        "fullEpisodeEditing": "Vollständige Episoden-Bearbeitung",
+        "highlightClips": "Highlight-Clips",
+        "audioEnhancement": "Audio-Verbesserung",
+        "socialMediaCuts": "Social-Media-Schnitte"
+      }
+    },
+    "socialMediaManagement": {
+      "title": "Social Media Management",
+      "description": "Umfassendes Social-Media-Management zum Aufbau Ihrer Online-Präsenz",
+      "features": {
+        "contentPlanning": "Content-Planung",
+        "multiPlatformPublishing": "Multi-Plattform-Veröffentlichung",
+        "engagementTracking": "Engagement-Tracking",
+        "brandVoiceConsistency": "Konsistenz der Markenstimme"
+      }
+    },
+    "trendResearch": {
+      "title": "Trendforschung & Content-Strategie",
+      "description": "Datengesteuerte Content-Strategien basierend auf Marktforschung und Erkenntnissen",
+      "features": {
+        "marketResearch": "Marktforschung",
+        "contentRecommendations": "Content-Empfehlungen",
+        "competitorAnalysis": "Konkurrenzanalyse",
+        "performanceInsights": "Performance-Erkenntnisse"
+      }
+    }
+  },
+  "videoGallery": {
+    "title": "Video-Galerie",
+    "subtitle": "Entdecken Sie unsere umfassende Sammlung von Videoinhalten, organisiert nach Serien und Themen",
+    "reelSeries": {
+      "title": "REEL-Serie",
+      "description": "Unsere Signature-Reel-Kollektion mit dynamischen Inhalten"
+    },
+    "primePursuit": {
+      "title": "Prime Pursuit Serie",
+      "description": "Premium-Content-Serie, die unser Streben nach Exzellenz hervorhebt"
+    },
+    "featuredContent": {
+      "title": "Featured Content",
+      "description": "Speziell kuratierte Inhalte, die unsere vielfältigen kreativen Fähigkeiten zeigen"
+    },
+    "extendedVersions": {
+      "title": "Erweiterte Versionen",
+      "description": "Längere Formatinhalte und alternative Versionen"
+    }
+  },
+  "workflow": {
+    "title": "Reel-Produktionsprozess",
+    "subtitle": "Unser optimierter 4-Schritte-Prozess bringt Ihre Inhalte in Rekordzeit vom Konzept zur Viral-Bereitschaft.",
+    "step1": {
+      "title": "Briefing & Strategie",
+      "description": "Wir analysieren Ihre Inhaltsziele und identifizieren die perfekte Viral-Formel für Ihre Marke.",
+      "details": {
+        "contentStrategy": "Content-Strategie-Diskussion",
+        "audienceAnalysis": "Zielgruppenanalyse",
+        "platformPlanning": "Plattform-spezifische Planung",
+        "trendResearch": "Trendforschung & Hooks"
+      }
+    },
+    "step2": {
+      "title": "Reel-Erstellung",
+      "description": "Schnelle Bearbeitung mit trendigen Effekten, perfektem Timing und Viral-Optimierung.",
+      "details": {
+        "dynamicEditing": "Dynamische Reel-Bearbeitung",
+        "trendingEffects": "Trendige Effekte & Übergänge",
+        "musicSync": "Musik-Sync & Beat-Matching",
+        "hookCreation": "Hook-Erstellung & Pacing"
+      }
+    },
+    "step3": {
+      "title": "Review & Politur",
+      "description": "Schnelle kollaborative Feedback-Runden zur Perfektionierung Ihres Reels vor der Veröffentlichung.",
+      "details": {
+        "instantDelivery": "Sofortige Entwurfslieferung",
+        "realtimeFeedback": "Echtzeit-Feedback",
+        "fastRevisions": "Schnelle Überarbeitungszyklen",
+        "finalOptimization": "Finale Optimierung"
+      }
+    },
+    "step4": {
+      "title": "Startbereit",
+      "description": "Plattform-optimierte Lieferung mit Untertiteln, Hashtags und Posting-Strategie.",
+      "details": {
+        "multiPlatformExports": "Multi-Plattform-Exporte",
+        "optimizedThumbnails": "Optimierte Thumbnails",
+        "captionsHashtags": "Untertitel- & Hashtag-Vorschläge",
+        "postingRecommendations": "Posting-Zeitempfehlungen"
+      }
+    },
+    "cta": {
+      "title": "Bereit viral zu gehen?",
+      "subtitle": "Lassen Sie uns Reels erstellen, die Aufmerksamkeit erregen, Engagement fördern und Ihre Zielgruppe vergrößern.",
+      "button": "Erstellen Sie Ihr erstes Reel"
+    }
+  },
+  "testimonials": {
+    "badge": "Kundenbewertungen",
+    "title": "Was unsere Kunden sagen",
+    "subtitle": "Hier ist, was Creators über die Zusammenarbeit mit uns sagen.",
+    "trustpilot": "Lesen Sie unsere Bewertungen auf Trustpilot",
+    "bottomCta": {
+      "question": "Möchten Sie mit uns arbeiten?",
+      "button": "Projekt starten"
+    }
+  },
+  "pricing": {
+    "title": "Content-Preispläne",
+    "subtitle": "Von individueller Content-Erstellung bis hin zu Strategien auf Unternehmensebene. Transparente Preise für das Wachstum jedes Unternehmens.",
+    "plans": {
+      "contentCreator": {
+        "name": "Content Creator",
+        "price": "297€",
+        "period": "pro Monat",
+        "description": "Perfekt für einzelne Creators und kleine Unternehmen, die ihre Video-Journey beginnen",
+        "cta": "Loslegen",
+        "features": [
+          "4 professionelle Videobearbeitungen",
+          "Social-Media-Inhalte (Reels, TikTok, YouTube Shorts)",
+          "Basis-Podcast-Bearbeitung (2 Episoden)",
+          "Content-Planung & Strategie",
+          "3 Überarbeitungsrunden",
+          "Multi-Plattform-Formate",
+          "48-Stunden-Lieferung",
+          "E-Mail-Support"
+        ]
+      },
+      "businessGrowth": {
+        "name": "Business Growth",
+        "price": "697€",
+        "period": "pro Monat",
+        "description": "Umfassende Video-Marketing-Lösung zur Förderung des Unternehmenswachstums",
+        "cta": "Ihr Unternehmen wachsen lassen",
+        "popular": "Am beliebtesten",
+        "features": [
+          "10 professionelle Videobearbeitungen",
+          "Marken-Storytelling-Videos",
+          "Produktpräsentations-Inhalte",
+          "Vollständige Podcast-Bearbeitung (4 Episoden)",
+          "Social-Media-Management",
+          "Trendforschung & Content-Strategie",
+          "Kundenbewertungs-Videos",
+          "Unbegrenzte Überarbeitungen",
+          "24-Stunden-Priority-Lieferung",
+          "Dedizierter Account-Manager",
+          "Performance-Analysen"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Individuell",
+        "period": "maßgeschneiderte Preise",
+        "description": "Komplette Content-Lösung für Marken und Agenturen auf Unternehmensebene",
+        "cta": "Sprechen wir",
+        "features": [
+          "Unbegrenzte Videoinhalte",
+          "Full-Service-Content-Produktion",
+          "Erweiterte Podcast-Produktion",
+          "Komplettes Social-Media-Management",
+          "Individuelle Markenanimationen",
+          "White-Label-Lösungen",
+          "Same-Day-Rush-Lieferung",
+          "Dediziertes Kreativteam",
+          "Monatliche Strategiesitzungen",
+          "Erweiterte Analysen & Berichte",
+          "Individuelle Integrationen",
+          "Priority-Support & SLA"
+        ]
+      }
+    },
+    "guarantees": {
+      "satisfaction": {
+        "title": "100% Zufriedenheitsgarantie",
+        "description": "Wir arbeiten mit Ihnen, bis Sie es lieben, oder Geld zurück"
+      },
+      "allInOne": {
+        "title": "All-in-One-Lösung",
+        "description": "Videoproduktion, Bearbeitung und Social-Media-Management"
+      },
+      "scalable": {
+        "title": "Skalierbare Pakete",
+        "description": "Von Content Creators bis hin zu Lösungen auf Unternehmensebene"
+      },
+      "expertTeam": {
+        "title": "Expertenkreativteam",
+        "description": "Dedizierte Profis mit bewährten Erfolgsbilanzen"
+      }
+    },
+    "contactCta": {
+      "subtitle": "Bereit, Ihr Unternehmen mit professionellen Videoinhalten zu vergrößern? Benötigen Sie eine individuelle Lösung?",
+      "button": "Kontaktieren Sie unser Team →"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Lassen Sie uns etwas Episches beginnen",
+      "title": "Bereit viral zu gehen?",
+      "subtitle": "Verwandeln Sie Ihre Ideen in scroll-stoppende Inhalte, die Millionen fesseln. Wählen Sie, wie Sie sich mit uns verbinden möchten.",
+      "stats": {
+        "videos": "500+ Videos",
+        "videosDesc": "Erstellt",
+        "views": "50M+ Aufrufe",
+        "viewsDesc": "Generiert",
+        "support": "24/7",
+        "supportDesc": "Support"
+      }
+    },
+    "tabs": {
+      "consultation": "Beratung buchen",
+      "message": "Nachricht senden"
+    },
+    "consultation": {
+      "title": "Planen Sie Ihren Discovery Call",
+      "subtitle": "30-minütige Beratung zur Besprechung Ihres Projekts und einem individuellen Angebot",
+      "coverage": "Was wir abdecken werden:",
+      "coverageItems": [
+        "Projektziele & Anforderungen",
+        "Marken- & Zielgruppenanalyse",
+        "Individuelles Angebot & Zeitplan",
+        "Relevante Portfolio-Beispiele"
+      ]
+    },
+    "messageForm": {
+      "title": "Senden Sie uns eine Nachricht",
+      "subtitle": "Erzählen Sie uns von Ihrem Projekt und wir melden uns innerhalb von 24 Stunden bei Ihnen",
+      "successMessage": "Nachricht erfolgreich gesendet! Wir melden uns bald bei Ihnen.",
+      "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+      "form": {
+        "name": "Name",
+        "namePlaceholder": "Ihr vollständiger Name",
+        "email": "E-Mail",
+        "emailPlaceholder": "ihre.email@beispiel.com",
+        "projectType": "Projekttyp",
+        "projectTypePlaceholder": "Projekttyp auswählen",
+        "budgetRange": "Budgetbereich",
+        "budgetRangePlaceholder": "Budgetbereich auswählen",
+        "sampleLink": "Beispiel-Link (Optional)",
+        "sampleLinkPlaceholder": "https://beispiel.com/ihr-beispiel",
+        "uploadFiles": "Dateien hochladen (Optional)",
+        "uploadPlaceholder": "Klicken Sie zum Hochladen oder ziehen Sie Dateien hierher",
+        "uploadDescription": "Video-, Bild- oder PDF-Dateien",
+        "message": "Nachricht",
+        "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt, Zielen und spezifischen Anforderungen...",
+        "sending": "Wird gesendet...",
+        "sendButton": "Nachricht senden"
+      },
+      "projectTypes": [
+        "Instagram Reels",
+        "TikTok Videos",
+        "YouTube Shorts",
+        "Social Media Content",
+        "Reel Package Deal",
+        "Marken-Content-Serie",
+        "User-Generated Content",
+        "Sonstiges"
+      ],
+      "budgetRanges": [
+        "Unter 500€ (1-5 Reels)",
+        "500€ - 2.000€ (5-15 Reels)",
+        "2.000€ - 5.000€ (Monatspaket)",
+        "5.000€+ (Enterprise/Agentur)",
+        "Noch unsicher"
+      ]
+    },
+    "contactInfo": {
+      "title": "Andere Wege zur Verbindung",
+      "email": {
+        "title": "E-Mail an uns",
+        "description": "Schreiben Sie uns jederzeit",
+        "contact": "hello@cinebyte.com"
+      },
+      "phone": {
+        "title": "Rufen Sie uns an",
+        "description": "Verfügbar 9:00 - 18:00 MEZ",
+        "contact": "+1 (555) 123-4567"
+      },
+      "location": {
+        "title": "Besuchen Sie uns",
+        "description": "Kommen Sie vorbei und sagen Hallo",
+        "contact": "Los Angeles, CA"
+      },
+      "social": {
+        "title": "Folgen Sie unserer Arbeit"
+      }
+    }
+  },
+  "brands": {
+    "title": "Vertraut von führenden Marken"
+  },
+  "footer": {
+    "brand": {
+      "name": "CineByte",
+      "description": "Erstellen viraler Reels und kurzer Inhalte, die Zielgruppen weltweit fesseln."
+    },
+    "quickLinks": {
+      "contact": "Kontakt",
+      "privacy": "Datenschutz",
+      "terms": "Bedingungen"
+    },
+    "copyright": "© 2025 CineByte. Alle Rechte vorbehalten.",
+    "madeWith": "Handgefertigt mit",
+    "location": "im Herzen Bangladeschs"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Fehler",
+    "close": "Schließen",
+    "open": "Öffnen",
+    "language": "Sprache",
+    "required": "*",
+    "optional": "(Optional)"
+  },
+  "meta": {
+    "title": "CineByte - Professionelle Reel & Kurzvideo-Bearbeitungsagentur",
+    "description": "Professionelle Reel-Bearbeitungsagentur, spezialisiert auf virale Instagram Reels, TikTok-Videos und YouTube Shorts. Wir verwandeln Ihre Inhalte in scroll-stoppende, engagement-fördernde Kurzvideos, die Zielgruppen weltweit fesseln.",
+    "keywords": "reel bearbeitung, instagram reels, tiktok bearbeitung, youtube shorts, kurze videos, virale inhalte, social media bearbeitung, reel agentur, content erstellung, mobile videos, cinebyte, professionelle videobearbeitung"
+  }
+}
