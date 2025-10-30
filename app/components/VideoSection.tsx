@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { ArrowRight, Play } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useTranslation } from '../../lib/i18n'
 
 export default function VideoSection() {
@@ -138,11 +139,9 @@ export default function VideoSection() {
           {/* Right Side - Cover Image */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative max-w-md w-full">
-              <motion.img
+              <motion.div
                 variants={imageVariants}
-                src="/assets/cinebytecover.png"
-                alt="CineByte Cover"
-                className="w-full h-auto rounded-2xl object-cover relative z-10"
+                className="relative w-full aspect-square"
                 animate={{
                   y: [0, -5, 0],
                 }}
@@ -151,7 +150,18 @@ export default function VideoSection() {
                   repeat: Infinity,
                   ease: "easeInOut"
                 }}
-              />
+              >
+                <Image
+                  src="/assets/cinebytecover-optimized.png"
+                  alt="CineByte Cover - Professional Reel Editing Agency"
+                  width={1200}
+                  height={1200}
+                  priority
+                  quality={90}
+                  sizes="(max-width: 768px) 380px, (max-width: 1024px) 768px, 1200px"
+                  className="rounded-2xl object-cover relative z-10"
+                />
+              </motion.div>
               
               {/* Floating Decorative Elements */}
               <div className="absolute inset-0 pointer-events-none">

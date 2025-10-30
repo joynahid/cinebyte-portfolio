@@ -8,8 +8,8 @@ export default function StructuredData() {
     "@type": "Organization",
     "name": "CineByte",
     "alternateName": "CineByte Video Editing",
-    "url": "https://cinebyte.com",
-    "logo": "https://cinebyte.com/assets/cinebytecover.png",
+    "url": "https://cinebyte.co",
+    "logo": "https://cinebyte.co/assets/cinebytecover-optimized.png",
     "description": "Professional reel editing agency specializing in viral Instagram Reels, TikTok videos, and YouTube Shorts.",
     "foundingDate": "2023",
     "founders": [
@@ -71,7 +71,7 @@ export default function StructuredData() {
     "areaServed": "Worldwide",
     "availableChannel": {
       "@type": "ServiceChannel",
-      "serviceUrl": "https://cinebyte.com",
+      "serviceUrl": "https://cinebyte.co",
       "serviceSupportedCountry": "Worldwide"
     }
   }
@@ -81,7 +81,7 @@ export default function StructuredData() {
     "@type": "WebSite",
     "name": "CineByte",
     "alternateName": "CineByte Video Editing Agency",
-    "url": "https://cinebyte.com",
+    "url": "https://cinebyte.co",
     "description": "Professional reel editing agency specializing in viral Instagram Reels, TikTok videos, and YouTube Shorts.",
     "publisher": {
       "@type": "Organization",
@@ -89,7 +89,7 @@ export default function StructuredData() {
     },
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://cinebyte.com/?search={search_term_string}",
+      "target": "https://cinebyte.co/?search={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }

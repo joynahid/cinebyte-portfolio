@@ -15,15 +15,11 @@ import {
   Instagram, 
   Video, 
   Mail, 
-  Phone, 
-  MapPin,
   CheckCircle,
   AlertCircle,
   Calendar,
   Clock,
-  MessageSquare,
-  Sparkles,
-  Zap
+  MessageSquare
 } from 'lucide-react'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
@@ -118,65 +114,6 @@ export default function ContactPage() {
       <Navigation />
       
       <main className="min-h-screen bg-background">
-        {/* Hero Section */}
-        <section className="relative section-padding container-padding overflow-hidden px-4 sm:px-6 lg:px-8">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
-          <div className="relative max-w-6xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-center content-spacing-lg"
-            >
-              {/* Floating Elements - Hidden on mobile to prevent layout issues */}
-              <div className="hidden lg:block absolute top-20 left-10 w-20 h-20 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full blur-xl opacity-30 animate-pulse" />
-              <div className="hidden lg:block absolute top-32 right-20 w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full blur-lg opacity-40 animate-bounce" />
-              <div className="hidden lg:block absolute bottom-20 left-1/4 w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full blur-md opacity-50" />
-              
-              <motion.div
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-6 py-2 mb-6"
-              >
-                <Sparkles className="w-4 h-4 text-primary" />
-                <span className="text-primary font-medium text-sm">Let's Start Something Epic</span>
-              </motion.div>
-
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground content-spacing-sm font-[family-name:var(--font-space-grotesk)] leading-tight">
-                Ready to Go <span className="text-brand-gradient">Viral</span>?
-              </h1>
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto font-[family-name:var(--font-inter)] px-4 sm:px-0">
-                Transform your ideas into scroll-stopping content that captivates millions. Choose how you'd like to connect with us.
-              </p>
-
-                              {/* Stats */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8 mt-8"
-              >
-                {[
-                  { icon: Zap, label: '500+ Videos', desc: 'Created' },
-                  { icon: Video, label: '50M+ Views', desc: 'Generated' },
-                  { icon: Calendar, label: '24/7', desc: 'Support' }
-                ].map((stat, index) => (
-                  <div key={index} className="flex items-center gap-2 sm:gap-3">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary/20 rounded-lg flex items-center justify-center">
-                      <stat.icon className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
-                    </div>
-                    <div className="text-left">
-                      <div className="text-foreground font-bold text-sm sm:text-base">{stat.label}</div>
-                      <div className="text-muted-foreground text-xs sm:text-sm">{stat.desc}</div>
-                    </div>
-                  </div>
-                ))}
-              </motion.div>
-            </motion.div>
-          </div>
-        </section>
-
         {/* Contact Section */}
         <section ref={ref} className="section-padding container-padding px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
@@ -454,27 +391,21 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Contact Info Section */}
+        {/* Contact Info Section - Email Only */}
         <section className="section-padding container-padding bg-card/20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="text-center content-spacing-lg"
+              className="text-center"
             >
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground content-spacing-sm font-[family-name:var(--font-space-grotesk)]">
-                Other Ways to <span className="text-brand-gradient">Connect</span>
-              </h2>
-            </motion.div>
-
-            <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
-              {/* Contact Details */}
+              {/* Email Contact */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.8 }}
-                className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl card-padding text-center"
+                className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl card-padding text-center max-w-md mx-auto mb-12"
               >
                 <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <Mail className="w-8 h-8 text-primary" />
@@ -493,79 +424,35 @@ export default function ContactPage() {
                 </a>
               </motion.div>
 
+              {/* Social Links */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 1.0 }}
-                className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl card-padding text-center"
               >
-                <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Phone className="w-8 h-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground mb-2 font-[family-name:var(--font-space-grotesk)]">
-                  Call Us
+                <h3 className="text-xl font-bold text-foreground mb-6 font-[family-name:var(--font-space-grotesk)]">
+                  Follow Our Work
                 </h3>
-                <p className="text-muted-foreground mb-4">
-                  Available 9 AM - 6 PM EST
-                </p>
-                <a 
-                  href="tel:+15551234567"
-                  className="text-primary hover:text-primary/80 font-medium transition-colors duration-150"
-                >
-                  +1 (555) 123-4567
-                </a>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: 1.2 }}
-                className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl card-padding text-center"
-              >
-                <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-8 h-8 text-primary" />
+                
+                <div className="flex justify-center gap-3 sm:gap-4">
+                  {[
+                    { icon: Youtube, label: 'YouTube', href: '#' },
+                    { icon: Instagram, label: 'Instagram', href: '#' },
+                    { icon: Video, label: 'TikTok', href: '#' }
+                  ].map((social, index) => (
+                    <motion.a
+                      key={social.label}
+                      href={social.href}
+                      whileHover={{ scale: 1.05, y: -1 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="w-12 h-12 sm:w-14 sm:h-14 bg-primary/20 hover:bg-primary/30 rounded-xl flex items-center justify-center transition-colors duration-150 group touch-manipulation"
+                      aria-label={social.label}
+                    >
+                      <social.icon className="w-6 h-6 sm:w-7 sm:h-7 text-primary group-hover:text-primary" />
+                    </motion.a>
+                  ))}
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-2 font-[family-name:var(--font-space-grotesk)]">
-                  Visit Us
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Come say hello
-                </p>
-                <span className="text-foreground">
-                  Los Angeles, CA
-                </span>
               </motion.div>
-            </div>
-
-            {/* Social Links */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 1.4 }}
-              className="text-center mt-12"
-            >
-              <h3 className="text-xl font-bold text-foreground mb-6 font-[family-name:var(--font-space-grotesk)]">
-                Follow Our Work
-              </h3>
-              
-              <div className="flex justify-center gap-3 sm:gap-4">
-                {[
-                  { icon: Youtube, label: 'YouTube', href: '#' },
-                  { icon: Instagram, label: 'Instagram', href: '#' },
-                  { icon: Video, label: 'TikTok', href: '#' }
-                ].map((social, index) => (
-                  <motion.a
-                    key={social.label}
-                    href={social.href}
-                    whileHover={{ scale: 1.05, y: -1 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="w-12 h-12 sm:w-14 sm:h-14 bg-primary/20 hover:bg-primary/30 rounded-xl flex items-center justify-center transition-colors duration-150 group touch-manipulation"
-                    aria-label={social.label}
-                  >
-                    <social.icon className="w-6 h-6 sm:w-7 sm:h-7 text-primary group-hover:text-primary" />
-                  </motion.a>
-                ))}
-              </div>
             </motion.div>
           </div>
         </section>
