@@ -119,7 +119,7 @@ export default function ContactPage() {
       
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="relative section-padding container-padding overflow-hidden">
+        <section className="relative section-padding container-padding overflow-hidden px-4 sm:px-6 lg:px-8">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
           <div className="relative max-w-6xl mx-auto">
             <motion.div
@@ -128,10 +128,10 @@ export default function ContactPage() {
               transition={{ duration: 0.6 }}
               className="text-center content-spacing-lg"
             >
-              {/* Floating Elements */}
-              <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full blur-xl opacity-30 animate-pulse" />
-              <div className="absolute top-32 right-20 w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full blur-lg opacity-40 animate-bounce" />
-              <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full blur-md opacity-50" />
+              {/* Floating Elements - Hidden on mobile to prevent layout issues */}
+              <div className="hidden lg:block absolute top-20 left-10 w-20 h-20 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full blur-xl opacity-30 animate-pulse" />
+              <div className="hidden lg:block absolute top-32 right-20 w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full blur-lg opacity-40 animate-bounce" />
+              <div className="hidden lg:block absolute bottom-20 left-1/4 w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full blur-md opacity-50" />
               
               <motion.div
                 initial={{ scale: 0 }}
@@ -143,32 +143,32 @@ export default function ContactPage() {
                 <span className="text-primary font-medium text-sm">Let's Start Something Epic</span>
               </motion.div>
 
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground content-spacing-sm font-[family-name:var(--font-space-grotesk)]">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground content-spacing-sm font-[family-name:var(--font-space-grotesk)] leading-tight">
                 Ready to Go <span className="text-brand-gradient">Viral</span>?
               </h1>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-[family-name:var(--font-inter)]">
+              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto font-[family-name:var(--font-inter)] px-4 sm:px-0">
                 Transform your ideas into scroll-stopping content that captivates millions. Choose how you'd like to connect with us.
               </p>
 
-              {/* Stats */}
+                              {/* Stats */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="flex flex-wrap justify-center gap-8 mt-8"
+                className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8 mt-8"
               >
                 {[
                   { icon: Zap, label: '500+ Videos', desc: 'Created' },
                   { icon: Video, label: '50M+ Views', desc: 'Generated' },
                   { icon: Calendar, label: '24/7', desc: 'Support' }
                 ].map((stat, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
-                      <stat.icon className="w-5 h-5 text-primary" />
+                  <div key={index} className="flex items-center gap-2 sm:gap-3">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary/20 rounded-lg flex items-center justify-center">
+                      <stat.icon className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                     </div>
                     <div className="text-left">
-                      <div className="text-foreground font-bold">{stat.label}</div>
-                      <div className="text-muted-foreground text-sm">{stat.desc}</div>
+                      <div className="text-foreground font-bold text-sm sm:text-base">{stat.label}</div>
+                      <div className="text-muted-foreground text-xs sm:text-sm">{stat.desc}</div>
                     </div>
                   </div>
                 ))}
@@ -178,7 +178,7 @@ export default function ContactPage() {
         </section>
 
         {/* Contact Section */}
-        <section ref={ref} className="section-padding container-padding">
+        <section ref={ref} className="section-padding container-padding px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <Tabs.Root defaultValue="consultation" className="w-full">
               {/* Tab List */}
@@ -191,17 +191,17 @@ export default function ContactPage() {
                 <Tabs.List className="grid w-full grid-cols-2 bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-2">
                   <Tabs.Trigger 
                     value="consultation" 
-                    className="relative flex items-center justify-center gap-3 px-6 py-4 rounded-xl font-semibold transition-all duration-150 data-[state=active]:bg-brand-gradient data-[state=active]:text-dark data-[state=active]:shadow-lg text-muted-foreground hover:text-foreground"
+                    className="relative flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 px-3 sm:px-6 py-3 sm:py-4 rounded-xl font-semibold transition-all duration-150 data-[state=active]:bg-brand-gradient data-[state=active]:text-dark data-[state=active]:shadow-lg text-muted-foreground hover:text-foreground text-sm sm:text-base"
                   >
-                    <Calendar className="w-5 h-5" />
-                    Book Consultation
+                    <Calendar className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <span className="text-center leading-tight">Book<br className="sm:hidden" /> Consultation</span>
                   </Tabs.Trigger>
                   <Tabs.Trigger 
                     value="message" 
-                    className="relative flex items-center justify-center gap-3 px-6 py-4 rounded-xl font-semibold transition-all duration-150 data-[state=active]:bg-brand-gradient data-[state=active]:text-dark data-[state=active]:shadow-lg text-muted-foreground hover:text-foreground"
+                    className="relative flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 px-3 sm:px-6 py-3 sm:py-4 rounded-xl font-semibold transition-all duration-150 data-[state=active]:bg-brand-gradient data-[state=active]:text-dark data-[state=active]:shadow-lg text-muted-foreground hover:text-foreground text-sm sm:text-base"
                   >
-                    <MessageSquare className="w-5 h-5" />
-                    Send Message
+                    <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <span className="text-center leading-tight">Send<br className="sm:hidden" /> Message</span>
                   </Tabs.Trigger>
                 </Tabs.List>
               </motion.div>
@@ -300,7 +300,7 @@ export default function ContactPage() {
 
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                     {/* Name & Email */}
-                    <div className="grid sm:grid-cols-2 gap-4">
+                    <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                       <div>
                         <label className="block text-foreground font-medium mb-2">
                           Name *
@@ -308,7 +308,7 @@ export default function ContactPage() {
                         <input
                           {...register('name')}
                           type="text"
-                          className="w-full px-4 py-3 bg-input border border-border rounded-xl text-foreground placeholder-muted-foreground focus:border-primary focus:outline-none"
+                          className="w-full px-4 py-4 sm:py-3 bg-input border border-border rounded-xl text-foreground placeholder-muted-foreground focus:border-primary focus:outline-none text-base"
                           placeholder="Your full name"
                         />
                         {errors.name && (
@@ -323,7 +323,7 @@ export default function ContactPage() {
                         <input
                           {...register('email')}
                           type="email"
-                          className="w-full px-4 py-3 bg-input border border-border rounded-xl text-foreground placeholder-muted-foreground focus:border-primary focus:outline-none"
+                          className="w-full px-4 py-4 sm:py-3 bg-input border border-border rounded-xl text-foreground placeholder-muted-foreground focus:border-primary focus:outline-none text-base"
                           placeholder="your.email@example.com"
                         />
                         {errors.email && (
@@ -333,14 +333,14 @@ export default function ContactPage() {
                     </div>
 
                     {/* Project Type & Budget */}
-                    <div className="grid sm:grid-cols-2 gap-4">
+                    <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                       <div>
                         <label className="block text-foreground font-medium mb-2">
                           Project Type *
                         </label>
                         <select
                           {...register('projectType')}
-                          className="w-full px-4 py-3 bg-input border border-border rounded-xl text-foreground focus:border-primary focus:outline-none"
+                          className="w-full px-4 py-4 sm:py-3 bg-input border border-border rounded-xl text-foreground focus:border-primary focus:outline-none text-base"
                         >
                           <option value="">Select project type</option>
                           {projectTypes.map((type) => (
@@ -358,7 +358,7 @@ export default function ContactPage() {
                         </label>
                         <select
                           {...register('budgetRange')}
-                          className="w-full px-4 py-3 bg-input border border-border rounded-xl text-foreground focus:border-primary focus:outline-none"
+                          className="w-full px-4 py-4 sm:py-3 bg-input border border-border rounded-xl text-foreground focus:border-primary focus:outline-none text-base"
                         >
                           <option value="">Select budget range</option>
                           {budgetRanges.map((range) => (
@@ -379,7 +379,7 @@ export default function ContactPage() {
                       <input
                         {...register('sampleLink')}
                         type="url"
-                        className="w-full px-4 py-3 bg-input border border-border rounded-xl text-foreground placeholder-muted-foreground focus:border-primary focus:outline-none"
+                        className="w-full px-4 py-4 sm:py-3 bg-input border border-border rounded-xl text-foreground placeholder-muted-foreground focus:border-primary focus:outline-none text-base"
                         placeholder="https://example.com/your-sample"
                       />
                       {errors.sampleLink && (
@@ -399,12 +399,12 @@ export default function ContactPage() {
                           accept="video/*,image/*,.pdf"
                           className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
                         />
-                        <div className="w-full px-4 py-3 bg-input border border-border border-dashed rounded-xl text-center hover:border-primary transition-colors duration-150">
+                        <div className="w-full px-4 py-4 sm:py-3 bg-input border border-border border-dashed rounded-xl text-center hover:border-primary transition-colors duration-150 min-h-[80px] flex flex-col justify-center">
                           <Upload className="w-6 h-6 text-muted-foreground mx-auto mb-2" />
-                          <span className="text-muted-foreground">
-                            {selectedFile ? selectedFile.name : 'Click to upload or drag and drop'}
+                          <span className="text-muted-foreground text-sm sm:text-base">
+                            {selectedFile ? selectedFile.name : 'Tap to upload or drag and drop'}
                           </span>
-                          <div className="text-sm text-muted-foreground mt-1">
+                          <div className="text-xs sm:text-sm text-muted-foreground mt-1">
                             Video, Image, or PDF files
                           </div>
                         </div>
@@ -419,7 +419,7 @@ export default function ContactPage() {
                       <textarea
                         {...register('message')}
                         rows={4}
-                        className="w-full px-4 py-3 bg-input border border-border rounded-xl text-foreground placeholder-muted-foreground focus:border-primary focus:outline-none resize-none"
+                        className="w-full px-4 py-4 sm:py-3 bg-input border border-border rounded-xl text-foreground placeholder-muted-foreground focus:border-primary focus:outline-none resize-none text-base"
                         placeholder="Tell us about your project, goals, and any specific requirements..."
                       />
                       {errors.message && (
@@ -431,18 +431,19 @@ export default function ContactPage() {
                     <motion.button
                       type="submit"
                       disabled={isSubmitting}
-                      whileHover={!isSubmitting ? { scale: 1.05, y: -2 } : {}}
-                      whileTap={!isSubmitting ? { scale: 0.95 } : {}}
-                      className="w-full bg-brand-gradient hover:opacity-90 disabled:opacity-50 text-primary-foreground px-8 py-4 rounded-2xl font-semibold text-lg flex items-center justify-center gap-3 transition-all duration-150 shadow-lg hover:shadow-xl hover:shadow-primary/25"
+                      whileHover={!isSubmitting ? { scale: 1.02, y: -1 } : {}}
+                      whileTap={!isSubmitting ? { scale: 0.98 } : {}}
+                      className="w-full bg-brand-gradient hover:opacity-90 disabled:opacity-50 text-primary-foreground px-6 sm:px-8 py-4 sm:py-4 rounded-2xl font-semibold text-base sm:text-lg flex items-center justify-center gap-2 sm:gap-3 transition-all duration-150 shadow-lg hover:shadow-xl hover:shadow-primary/25 min-h-[56px] touch-manipulation"
                     >
                       {isSubmitting ? (
                         <>
                           <div className="w-5 h-5 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin" />
-                          Sending...
+                          <span>Sending...</span>
                         </>
                       ) : (
                         <>
-                          Send Message <Send size={20} />
+                          <span>Send Message</span>
+                          <Send size={18} className="sm:w-5 sm:h-5" />
                         </>
                       )}
                     </motion.button>
@@ -454,7 +455,7 @@ export default function ContactPage() {
         </section>
 
         {/* Contact Info Section */}
-        <section className="section-padding container-padding bg-card/20">
+        <section className="section-padding container-padding bg-card/20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -467,7 +468,7 @@ export default function ContactPage() {
               </h2>
             </motion.div>
 
-            <div className="grid md:grid-cols-3 grid-gap">
+            <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
               {/* Contact Details */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -485,10 +486,10 @@ export default function ContactPage() {
                   Drop us a line anytime
                 </p>
                 <a 
-                  href="mailto:hello@cinebyte.com"
+                  href="mailto:hello@cinebyte.co"
                   className="text-primary hover:text-primary/80 font-medium transition-colors duration-150"
                 >
-                  hello@cinebyte.com
+                  hello@cinebyte.co
                 </a>
               </motion.div>
 
@@ -547,7 +548,7 @@ export default function ContactPage() {
                 Follow Our Work
               </h3>
               
-              <div className="flex justify-center gap-4">
+              <div className="flex justify-center gap-3 sm:gap-4">
                 {[
                   { icon: Youtube, label: 'YouTube', href: '#' },
                   { icon: Instagram, label: 'Instagram', href: '#' },
@@ -556,11 +557,12 @@ export default function ContactPage() {
                   <motion.a
                     key={social.label}
                     href={social.href}
-                    whileHover={{ scale: 1.1, y: -2 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="w-14 h-14 bg-primary/20 hover:bg-primary/30 rounded-xl flex items-center justify-center transition-colors duration-150 group"
+                    whileHover={{ scale: 1.05, y: -1 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="w-12 h-12 sm:w-14 sm:h-14 bg-primary/20 hover:bg-primary/30 rounded-xl flex items-center justify-center transition-colors duration-150 group touch-manipulation"
+                    aria-label={social.label}
                   >
-                    <social.icon className="w-7 h-7 text-primary group-hover:text-primary" />
+                    <social.icon className="w-6 h-6 sm:w-7 sm:h-7 text-primary group-hover:text-primary" />
                   </motion.a>
                 ))}
               </div>

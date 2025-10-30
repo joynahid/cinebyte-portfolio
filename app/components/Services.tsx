@@ -43,29 +43,29 @@ const Services = () => {
   // Feature icons with colors
   const getFeatureIcon = (feature: string, serviceIndex: number) => {
     const iconMap: { [key: string]: { icon: React.ReactNode; color: string } } = {
-      // Business Growth Video Content
-      'Brand Storytelling': { icon: <Film className="w-4 h-4" />, color: 'text-blue-500' },
-      'Lead Generation': { icon: <Target className="w-4 h-4" />, color: 'text-green-500' },
+      // Instagram Reels
+      'Trending Effects': { icon: <Sparkles className="w-4 h-4" />, color: 'text-blue-500' },
+      'Music Sync': { icon: <Music className="w-4 h-4" />, color: 'text-purple-500' },
+      'Hook Creation': { icon: <Target className="w-4 h-4" />, color: 'text-green-500' },
+      'Fast-Paced Editing': { icon: <Zap className="w-4 h-4" />, color: 'text-orange-500' },
+
+      // TikTok Videos
+      'Viral Trends': { icon: <TrendingUp className="w-4 h-4" />, color: 'text-purple-600' },
+      'Beat Matching': { icon: <Music className="w-4 h-4" />, color: 'text-pink-500' },
+      'Captions & Text': { icon: <PenTool className="w-4 h-4" />, color: 'text-cyan-500' },
+      'Transition Effects': { icon: <Zap className="w-4 h-4" />, color: 'text-violet-500' },
+
+      // YouTube Shorts
+      'Thumbnail Design': { icon: <Image className="w-4 h-4" />, color: 'text-red-500' },
+      'Hook Strategy': { icon: <Target className="w-4 h-4" />, color: 'text-orange-500' },
+      'Pacing & Timing': { icon: <Clock className="w-4 h-4" />, color: 'text-blue-500' },
+      'CTA Placement': { icon: <ArrowRight className="w-4 h-4" />, color: 'text-green-500' },
+
+      // Brand Content Reels
+      'Brand Guidelines': { icon: <CheckCircle className="w-4 h-4" />, color: 'text-amber-600' },
       'Product Showcases': { icon: <Camera className="w-4 h-4" />, color: 'text-purple-500' },
-      'Customer Testimonials': { icon: <Users className="w-4 h-4" />, color: 'text-orange-500' },
-
-      // Podcast Editing & Clips
-      'Full Episode Editing': { icon: <Edit3 className="w-4 h-4" />, color: 'text-indigo-500' },
-      'Highlight Clips': { icon: <Clapperboard className="w-4 h-4" />, color: 'text-cyan-500' },
-      'Audio Enhancement': { icon: <Mic className="w-4 h-4" />, color: 'text-green-600' },
-      'Social Media Cuts': { icon: <Smartphone className="w-4 h-4" />, color: 'text-pink-500' },
-
-      // Social Media Management
-      'Content Planning': { icon: <Clock className="w-4 h-4" />, color: 'text-orange-500' },
-      'Multi-Platform Publishing': { icon: <Monitor className="w-4 h-4" />, color: 'text-slate-500' },
-      'Engagement Tracking': { icon: <BarChart3 className="w-4 h-4" />, color: 'text-cyan-500' },
-      'Brand Voice Consistency': { icon: <CheckCircle className="w-4 h-4" />, color: 'text-emerald-500' },
-
-      // Trend Research & Content Strategy
-      'Market Research': { icon: <Search className="w-4 h-4" />, color: 'text-emerald-600' },
-      'Content Recommendations': { icon: <Lightbulb className="w-4 h-4" />, color: 'text-yellow-500' },
-      'Competitor Analysis': { icon: <LineChart className="w-4 h-4" />, color: 'text-blue-600' },
-      'Performance Insights': { icon: <TrendingUp className="w-4 h-4" />, color: 'text-green-600' },
+      'Story-Driven': { icon: <Film className="w-4 h-4" />, color: 'text-blue-500' },
+      'Professional Polish': { icon: <Sparkles className="w-4 h-4" />, color: 'text-emerald-500' },
     }
 
     return iconMap[feature] || { icon: <CheckCircle className="w-4 h-4" />, color: 'text-primary' }
@@ -73,40 +73,40 @@ const Services = () => {
 
   const services = [
     {
-      icon: <TrendingUp className="w-8 h-8" />,
+      icon: <Film className="w-8 h-8" />,
       iconColor: "text-blue-600",
       bgColor: "bg-blue-50",
       borderColor: "border-blue-200",
-      title: "Business Growth Video Content",
-      description: "Strategic video content designed to drive business growth and conversions",
-      features: ["Brand Storytelling", "Lead Generation", "Product Showcases", "Customer Testimonials"]
+      title: "Instagram Reels",
+      description: "Viral-ready Instagram Reels optimized for maximum engagement and reach",
+      features: ["Trending Effects", "Music Sync", "Hook Creation", "Fast-Paced Editing"]
     },
     {
-      icon: <Mic className="w-8 h-8" />,
+      icon: <Smartphone className="w-8 h-8" />,
       iconColor: "text-purple-600",
       bgColor: "bg-purple-50",
       borderColor: "border-purple-200",
-      title: "Podcast Editing & Clips",
-      description: "Professional podcast editing and engaging short clips for social distribution",
-      features: ["Full Episode Editing", "Highlight Clips", "Audio Enhancement", "Social Media Cuts"]
+      title: "TikTok Videos",
+      description: "Platform-optimized TikTok content that captures attention in the first second",
+      features: ["Viral Trends", "Beat Matching", "Captions & Text", "Transition Effects"]
     },
     {
-      icon: <Users className="w-8 h-8" />,
-      iconColor: "text-green-600",
-      bgColor: "bg-green-50",
-      borderColor: "border-green-200",
-      title: "Social Media Management",
-      description: "Comprehensive social media management to build your online presence",
-      features: ["Content Planning", "Multi-Platform Publishing", "Engagement Tracking", "Brand Voice Consistency"]
+      icon: <Youtube className="w-8 h-8" />,
+      iconColor: "text-red-600",
+      bgColor: "bg-red-50",
+      borderColor: "border-red-200",
+      title: "YouTube Shorts",
+      description: "Engaging YouTube Shorts that drive subscribers and views",
+      features: ["Thumbnail Design", "Hook Strategy", "Pacing & Timing", "CTA Placement"]
     },
     {
-      icon: <Search className="w-8 h-8" />,
-      iconColor: "text-orange-600",
-      bgColor: "bg-orange-50",
-      borderColor: "border-orange-200",
-      title: "Trend Research & Content Strategy",
-      description: "Data-driven content strategies based on market research and insights",
-      features: ["Market Research", "Content Recommendations", "Competitor Analysis", "Performance Insights"]
+      icon: <Sparkles className="w-8 h-8" />,
+      iconColor: "text-amber-600",
+      bgColor: "bg-amber-50",
+      borderColor: "border-amber-200",
+      title: "Brand Content Reels",
+      description: "Professional brand storytelling in short-form content that converts",
+      features: ["Brand Guidelines", "Product Showcases", "Story-Driven", "Professional Polish"]
     }
   ]
 
@@ -128,7 +128,7 @@ const Services = () => {
             Our <span className="text-brand-gradient">Services</span>
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto font-[family-name:var(--font-inter)]">
-            Professional video content and social media solutions to grow your business
+            Professional reel editing services for Instagram, TikTok, YouTube Shorts, and brand content
           </p>
         </motion.div>
 
@@ -203,7 +203,7 @@ const Services = () => {
               whileTap={{ scale: 0.98 }}
               className="bg-brand-gradient hover:opacity-90 text-primary-foreground px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base flex items-center gap-2 mx-auto transition-all duration-150 shadow-lg hover:shadow-xl hover:shadow-primary/20"
             >
-              Grow Your Business <ArrowRight size={16} className="sm:w-4 sm:h-4" />
+              Start Creating Reels <ArrowRight size={16} className="sm:w-4 sm:h-4" />
             </motion.button>
           </Link>
         </motion.div>

@@ -16,46 +16,46 @@
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "Professional video content and social media solutions to grow your business",
-    "cta": "Grow Your Business",
-    "businessGrowth": {
-      "title": "Business Growth Video Content",
-      "description": "Strategic video content designed to drive business growth and conversions",
+    "subtitle": "Professional reel editing services for Instagram, TikTok, YouTube Shorts, and brand content",
+    "cta": "Start Creating Reels",
+    "instagramReels": {
+      "title": "Instagram Reels",
+      "description": "Viral-ready Instagram Reels optimized for maximum engagement and reach",
       "features": {
-        "brandStorytelling": "Brand Storytelling",
-        "leadGeneration": "Lead Generation",
+        "trendingEffects": "Trending Effects",
+        "musicSync": "Music Sync",
+        "hookCreation": "Hook Creation",
+        "fastPacedEditing": "Fast-Paced Editing"
+      }
+    },
+    "tiktokVideos": {
+      "title": "TikTok Videos",
+      "description": "Platform-optimized TikTok content that captures attention in the first second",
+      "features": {
+        "viralTrends": "Viral Trends",
+        "beatMatching": "Beat Matching",
+        "captionsText": "Captions & Text",
+        "transitionEffects": "Transition Effects"
+      }
+    },
+    "youtubeShorts": {
+      "title": "YouTube Shorts",
+      "description": "Engaging YouTube Shorts that drive subscribers and views",
+      "features": {
+        "thumbnailDesign": "Thumbnail Design",
+        "hookStrategy": "Hook Strategy",
+        "pacingTiming": "Pacing & Timing",
+        "ctaPlacement": "CTA Placement"
+      }
+    },
+    "brandContentReels": {
+      "title": "Brand Content Reels",
+      "description": "Professional brand storytelling in short-form content that converts",
+      "features": {
+        "brandGuidelines": "Brand Guidelines",
         "productShowcases": "Product Showcases",
-        "customerTestimonials": "Customer Testimonials"
-      }
-    },
-    "podcastEditing": {
-      "title": "Podcast Editing & Clips",
-      "description": "Professional podcast editing and engaging short clips for social distribution",
-      "features": {
-        "fullEpisodeEditing": "Full Episode Editing",
-        "highlightClips": "Highlight Clips",
-        "audioEnhancement": "Audio Enhancement",
-        "socialMediaCuts": "Social Media Cuts"
-      }
-    },
-    "socialMediaManagement": {
-      "title": "Social Media Management",
-      "description": "Comprehensive social media management to build your online presence",
-      "features": {
-        "contentPlanning": "Content Planning",
-        "multiPlatformPublishing": "Multi-Platform Publishing",
-        "engagementTracking": "Engagement Tracking",
-        "brandVoiceConsistency": "Brand Voice Consistency"
-      }
-    },
-    "trendResearch": {
-      "title": "Trend Research & Content Strategy",
-      "description": "Data-driven content strategies based on market research and insights",
-      "features": {
-        "marketResearch": "Market Research",
-        "contentRecommendations": "Content Recommendations",
-        "competitorAnalysis": "Competitor Analysis",
-        "performanceInsights": "Performance Insights"
+        "storyDriven": "Story-Driven",
+        "professionalPolish": "Professional Polish"
       }
     }
   },
@@ -301,7 +301,7 @@
       "email": {
         "title": "Email Us",
         "description": "Drop us a line anytime",
-        "contact": "hello@cinebyte.com"
+        "contact": "hello@cinebyte.co"
       },
       "phone": {
         "title": "Call Us",

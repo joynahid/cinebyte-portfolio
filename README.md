@@ -158,7 +158,7 @@ Update content in:
 ## 📞 Support
 
 For questions or support, contact:
-- Email: hello@cinebyte.com
+- Email: hello@cinebyte.co
 - Website: Coming soon!
 
 ---

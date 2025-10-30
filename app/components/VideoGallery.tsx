@@ -39,21 +39,6 @@ export default function VideoGallery() {
   // Organize videos by categories
   const videoSections: VideoSection[] = [
     {
-      id: 'reel-series',
-      title: 'REEL Series',
-      description: 'Our signature reel collection showcasing dynamic content',
-      theme: 'reel',
-      videos: [
-        { id: 'reel-1', src: '/assets/videos/REEL 1_720p.mp4', title: 'REEL 1', category: 'reel', description: 'Dynamic visual storytelling' },
-        { id: 'reel-2', src: '/assets/videos/REEL 2_720p.mp4', title: 'REEL 2', category: 'reel', description: 'Creative content showcase' },
-        { id: 'reel-3', src: '/assets/videos/REEL 3_720p.mp4', title: 'REEL 3', category: 'reel', description: 'Artistic expression in motion' },
-        { id: 'reel-4', src: '/assets/videos/REEL 4_720p.mp4', title: 'REEL 4', category: 'reel', description: 'Visual narrative excellence' },
-        { id: 'reel-5', src: '/assets/videos/REEL 5_720p.mp4', title: 'REEL 5', category: 'reel', description: 'Cinematic storytelling' },
-        { id: 'reel-6', src: '/assets/videos/REEL 6_720p.mp4', title: 'REEL 6', category: 'reel', description: 'Professional video content' },
-        { id: 'reel-7', src: '/assets/videos/REEL 7_720p.mp4', title: 'REEL 7', category: 'reel', description: 'Engaging visual content' },
-      ]
-    },
-    {
       id: 'prime-pursuit',
       title: 'Prime Pursuit Series',
       description: 'Premium content series highlighting our pursuit of excellence',

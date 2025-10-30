@@ -266,7 +266,7 @@ export default function PrivacyPage() {
                   If you have any questions about this Privacy Policy or our data practices, please contact us:
                 </p>
                 <div className="mt-4 space-y-2">
-                  <p><strong>Email:</strong> hello@cinebyte.com</p>
+                  <p><strong>Email:</strong> hello@cinebyte.co</p>
                   <p><strong>Phone:</strong> +880 13 0405 1550</p>
                   <p><strong>Address:</strong> Dhaka, Bangladesh</p>
                 </div>

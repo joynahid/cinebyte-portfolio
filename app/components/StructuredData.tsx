@@ -27,7 +27,7 @@ export default function StructuredData() {
       "@type": "ContactPoint",
       "telephone": "+880 13 0405 1550",
       "contactType": "customer service",
-      "email": "hello@cinebyte.com",
+      "email": "hello@cinebyte.co",
       "availableLanguage": "English"
     },
     "sameAs": [

@@ -29,7 +29,7 @@ export default function Footer() {
             {[
               { Icon: Instagram, href: "https://instagram.com/cinebyte.official", label: "Instagram" },
               { Icon: Twitter, href: "https://twitter.com/cinebyte_", label: "Twitter" },
-              { Icon: Mail, href: "mailto:hello@cinebyte.com", label: "Email" }
+              { Icon: Mail, href: "mailto:hello@cinebyte.co", label: "Email" }
             ].map(({ Icon, href, label }) => (
               <motion.a
                 key={label}
